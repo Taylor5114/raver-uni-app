@@ -1,0 +1,1 @@
+<view class="content"><image class="logo" src="http://yun.izxv.cn/view.php/120fde550ec2cdedd6b7cb82da918e14.png"></image><view class="text-area"><text class="title">{{title}}</text></view></view>
