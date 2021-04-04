@@ -5,7 +5,6 @@
 		</view>
 		<view v-show='ids==index' class="body" v-for='(item,index) in singer'>
 			<h1>{{item.name}}</h1>
-			<p>{{item.introduce}}</p>
 		</view>
 		
 	</view>

@@ -1,0 +1,1 @@
+<view class="content"><index-bar vue-id="cc049370-1" items="{{items}}" bind:__l="__l"></index-bar></view>

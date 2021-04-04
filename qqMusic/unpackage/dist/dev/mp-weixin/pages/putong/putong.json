@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "QQ音乐",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "index-bar": "/components/index-bar"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/video/video",
+    "pages/putong/putong"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#Fafafa",
+    "backgroundColor": "#Fafafa"
+  },
+  "tabBar": {
+    "color": "#dbdbdb",
+    "selectedColor": "#38e6af",
+    "borderStyle": "none",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/image/music.png",
+        "selectedIconPath": "static/image/music-on.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/video/video",
+        "iconPath": "static/image/video.png",
+        "selectedIconPath": "static/image/video-on.png",
+        "text": "视频"
+      },
+      {
+        "pagePath": "pages/putong/putong",
+        "iconPath": "static/image/cloud.png",
+        "selectedIconPath": "static/image/cloud-on.png",
+        "text": "扑通"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "static/image/mine.png",
+        "selectedIconPath": "static/image/mine-on.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

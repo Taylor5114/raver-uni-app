@@ -14,4 +14,8 @@
 
 <style>
 	/*每个页面公共css */
+	@import './common/animate.css';
+	.body{
+		font-family: "宋体";
+	}
 </style>
