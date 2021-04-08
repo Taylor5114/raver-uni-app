@@ -3,37 +3,43 @@
     "pages/index/index",
     "pages/position/position",
     "pages/record/record",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/mine/resume/resume",
+    "pages/mine/accessory/accessory",
+    "pages/mine/interview/interview",
+    "pages/mine/subscription/subscription",
+    "pages/index/search/search"
   ],
   "subPackages": [],
   "window": {
-    "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "山轻求职",
-    "navigationBarBackgroundColor": "#4babff"
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "#37C2BB",
+    "titleImage": "https://files.catbox.moe/qb9125.png"
   },
   "tabBar": {
-    "color": "#DBDBDB",
+    "color": "#787878",
     "selectedColor": "#515151",
-    "borderStyle": "none",
-    "backgroundColor": "#4babff",
+    "borderStyle": "black",
+    "backgroundColor": "#FFFFFF",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "static/image/index.png",
-        "selectedIconPath": "static/image/index1.png",
-        "text": "首页"
-      },
-      {
-        "pagePath": "pages/position/position",
         "iconPath": "static/image/position.png",
         "selectedIconPath": "static/image/position1.png",
         "text": "职位"
       },
       {
+        "pagePath": "pages/position/position",
+        "iconPath": "static/image/bixin.png",
+        "selectedIconPath": "static/image/bixin1.png",
+        "text": "有了"
+      },
+      {
         "pagePath": "pages/record/record",
-        "iconPath": "static/image/record.png",
-        "selectedIconPath": "static/image/record1.png",
-        "text": "记录"
+        "iconPath": "static/image/news.png",
+        "selectedIconPath": "static/image/news1.png",
+        "text": "消息"
       },
       {
         "pagePath": "pages/mine/mine",
@@ -43,5 +49,6 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
 }

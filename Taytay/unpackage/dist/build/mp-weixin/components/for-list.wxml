@@ -1,0 +1,1 @@
+<view class="list-body"><block wx:for="{{navs}}" wx:for-item="item" wx:for-index="index"><view class="_li"><image src="{{item.img}}" mode></image>{{''+item.title+''}}</view></block></view>

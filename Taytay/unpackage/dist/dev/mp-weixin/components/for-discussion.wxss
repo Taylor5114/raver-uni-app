@@ -1,0 +1,203 @@
+
+.nape{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+	height: 1500rpx;
+}
+.nape-tt ._p{
+	width: 70rpx;
+	padding: 20rpx 0;
+}
+._h3{
+	width: 100%;
+	line-height: 100rpx;
+}
+.title{
+	width: 13%;
+	height: auto;  /*修改 */
+	background-color: #F5F5F5;
+	overflow-y: auto;
+}
+.title view{
+	width: 100%;
+	height: auto;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	font-size: 26rpx;
+}
+.changebg{
+	background-color: #FFFFFF;
+}
+.content{
+	width:87%; 
+	overflow-y: auto;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.all{
+	width: 100rpx;
+	height: 60rpx;
+	margin: 20rpx 0 50rpx 0;
+	background-color: #E8F8F7;
+	-webkit-border-radius: 10rpx;
+	        border-radius: 10rpx;
+	color: #37C2BB;
+	font-size: 25rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.imgCardout{
+	width: 600rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.imgCard{
+	width: 280rpx;
+	height: 355rpx;
+	-webkit-border-radius: 10rpx;
+	        border-radius: 10rpx;
+	overflow: hidden;
+	position: relative;
+}
+.imgCard ._p{
+	color: #FFFFFF;
+	bottom: 20rpx;
+	left: 20rpx;
+	font-weight: bold;
+	position: absolute;
+	z-index: 1;
+}
+.imgCard image{
+	width: 100%;
+	height: 100%;
+}
+.contCard{
+	width: 600rpx;
+	height: 300rpx;
+	-webkit-border-radius: 20rpx;
+	        border-radius: 20rpx;
+	-webkit-box-shadow: 0rpx 0rpx 30rpx #ececec;
+	        box-shadow: 0rpx 0rpx 30rpx #ececec;
+	margin-bottom: 30rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+.cardin{
+	width: 90%;
+	height: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: space-evenly;
+	-webkit-justify-content: space-evenly;
+	        justify-content: space-evenly;
+}
+.line01{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.line01 ._p{
+	color: #B0B0B0;
+	font-size: 25rpx;
+}
+.jinghao{
+	color: #37C2BB;
+}
+.vote{
+	width: 100%;
+	height: 60rpx;
+	-webkit-border-radius: 30rpx;
+	        border-radius: 30rpx;
+	overflow: hidden;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	position: relative;
+}
+.bias{
+	width: 12rpx;
+	height: 100rpx;
+	background-color: #FFFFFF;
+	-webkit-transform: rotate(7deg);
+	        transform: rotate(7deg);
+	position: absolute;
+	left: 49%;
+	top: -30%;
+	z-index: 2;
+}
+.yes{
+	width: 50%;
+	background-color: #007AFF;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	color: #FFFFFF;
+}
+.nope{
+	width: 50%;
+	background-color: #37C2BB;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	color: #FFFFFF;
+}
+.matter{
+	color: #949494;
+	list-style: none;
+}
+

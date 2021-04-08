@@ -1,1 +1,1 @@
-<view>记录</view>
+<view><set-vote vue-id="3267e520-1" bind:__l="__l"></set-vote></view>

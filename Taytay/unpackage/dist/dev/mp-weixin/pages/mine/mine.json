@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "set-count": "/components/set-count"
+  }
 }

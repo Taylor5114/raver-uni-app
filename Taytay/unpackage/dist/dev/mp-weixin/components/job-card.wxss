@@ -1,0 +1,123 @@
+
+.job-card{
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.cc{
+	width: 100%;
+	height: 310rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.line{
+	width: 100%;
+	height: 10rpx;
+	background-color: #F6F6F6;
+}
+.cards{
+	width: 90%;
+	height: 300rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-justify-content: space-around;
+	        justify-content: space-around;
+}
+.line01{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.line02{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	        justify-content: flex-start;
+	color: #929292;
+}
+.line02 ._p{
+	font-size: 28rpx;
+	margin-right: 20rpx;
+}
+.line03 view{
+	height: 40rpx;
+	line-height: 20rpx;
+	margin-right: 10rpx;
+	-webkit-border-radius: 8rpx;
+	        border-radius: 8rpx;
+	width: auto;
+	background-color: #F5F5F5;
+}
+.line03 view ._p{
+	padding: 10rpx;
+}
+.line03{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	        justify-content: flex-start;
+	color: #686868;
+	font-size: 20rpx;
+}
+.line04{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.l04-l{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.l04-l image{
+	width: 50rpx;
+	height: 50rpx;
+	-webkit-border-radius: 25rpx;
+	        border-radius: 25rpx;
+}
+.name{
+	font-size: 20rpx;
+	margin-left: 20rpx;
+}
+.address{
+	font-size: 20rpx;
+	color: #B9B9B9;
+}
+.pay{
+	color: #37C2BB;
+}
+

@@ -1,0 +1,1 @@
+<view><view id="app"><label data-event-opts="{{[['tap',[['sub',['$event']]]]]}}" bindtap="__e" class="_span">-</label><label id="s1" class="_span">{{count}}</label><label data-event-opts="{{[['tap',[['add',['$event']]]]]}}" bindtap="__e" class="_span">{{word}}</label></view></view>

@@ -1,1 +1,1 @@
-<view>职位</view>
+<view class="position"><view class="top"><view class="topin"><navigator class="search" url="search/search"><view class="searchin"><image src="../../static/image/search.png" mode></image></view><view class="_p">搜索职位、公司</view></navigator></view></view><for-list vue-id="47401120-1" navs="{{navs}}" bind:__l="__l"></for-list><view style="width:100%;height:10rpx;background:#F5F5F5;"></view><for-discussion vue-id="47401120-2" nape="{{nape}}" bind:__l="__l"></for-discussion></view>
