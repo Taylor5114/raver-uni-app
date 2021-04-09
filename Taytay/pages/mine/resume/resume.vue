@@ -15,8 +15,8 @@
 				<view class="">
 					<image src="../../../static/image/camera.png" mode=""></image>
 				</view>
-			</view>
-		</view>
+			</view> 
+		</view>  
 		<view class='line'></view>
 		<view class="gender demo">
 			<h4>性别</h4>
@@ -54,7 +54,7 @@
 		</view>
 		<view class='line'></view>
 		<view class="confirm">
-			<button>确定</button>
+			<button>确定</button><strong></strong>
 		</view>
 	</view>
 </template>

@@ -59,7 +59,7 @@
             }
         },
         {
-            "path" : "components/set-vote",
+            "path" : "components/set-msg",
             "style" : {}
         }
     ],

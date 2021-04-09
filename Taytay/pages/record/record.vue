@@ -1,21 +1,57 @@
 <template>
 	<view>
-		<setVote :cont='cont'></setVote>
+		<setMsg :height='height' :cont='cont'></setMsg>
 	</view>
 </template>
 
 <script>
-	import setVote from '../../components/set-vote.vue';
+	import setMsg from '../../components/set-msg.vue';
 	export default {
 		components:{
-			setVote
+			setMsg
 		},
 		data() {
 			return {
+				height:0,
 				cont:[
 					{
-						title:'消息',
+						title:'消息', 
 						msage:[
+							{
+								head:'../../static/1x1img/1.jpg',
+								name:'宋阳阳',
+								position:'东道智能·HR',
+								date:'昨天',
+								msg:'等考虑工作的时候 可以优先考虑我们公司'
+							},
+							{
+								head:'../../static/1x1img/1.jpg',
+								name:'宋阳阳',
+								position:'东道智能·HR',
+								date:'昨天',
+								msg:'等考虑工作的时候 可以优先考虑我们公司'
+							},
+							{
+								head:'../../static/1x1img/1.jpg',
+								name:'宋阳阳',
+								position:'东道智能·HR',
+								date:'昨天',
+								msg:'等考虑工作的时候 可以优先考虑我们公司'
+							},
+							{
+								head:'../../static/1x1img/1.jpg',
+								name:'宋阳阳',
+								position:'东道智能·HR',
+								date:'昨天',
+								msg:'等考虑工作的时候 可以优先考虑我们公司'
+							},
+							{
+								head:'../../static/1x1img/1.jpg',
+								name:'宋阳阳',
+								position:'东道智能·HR',
+								date:'昨天',
+								msg:'等考虑工作的时候 可以优先考虑我们公司'
+							},
 							{
 								head:'../../static/1x1img/1.jpg',
 								name:'宋阳阳',
@@ -33,8 +69,27 @@
 			}
 		},
 		methods: {
-			
+			ttmsg(){
+				this.cont[0].msage.push(
+					{
+						head:'../../static/1x1img/1.jpg',
+						name:'宋yue',
+						position:'东道智能·HR',
+						date:'昨天',
+						msg:'等考虑工作的时候 可以优先考虑我们公司'
+					}
+				);
+			}
+		},onLoad() {
+			uni.getSystemInfo({
+					success: (res) => {
+						this.height = res.windowHeight
+						console.log(res.windowHeight)
+						
+					}
+				})
 		}
+		
 	}
 </script>
 
