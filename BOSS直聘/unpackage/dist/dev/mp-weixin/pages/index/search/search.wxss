@@ -1,0 +1,11 @@
+
+.aa{
+	width: 1000rpx;
+	height: 2500rpx;
+	background-color: #007AFF;
+}
+.bb{
+	width: 1000rpx;
+	height: 2600rpx;
+}
+

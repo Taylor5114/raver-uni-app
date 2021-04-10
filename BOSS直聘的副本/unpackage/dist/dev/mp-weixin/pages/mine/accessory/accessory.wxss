@@ -1,0 +1,66 @@
+
+.body{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.nothing{
+	width: 90%;
+	height: 1000rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	color: #808080;
+	font-size: 28rpx;
+}
+.nothing image{
+	width: 300rpx;
+	height: 300rpx;
+}
+.footer{
+	width: 100%;
+	height: 200rpx;
+	position: absolute;
+	bottom: 10rpx;
+	color: #ADADAD;
+	font-size: 24rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-justify-content: space-around;
+	        justify-content: space-around;
+}
+.footer ._p{
+	width: 90%;
+}
+.footer button{
+	width: 90%;
+	height: 80rpx;
+	color: #FFFFFF;
+	background-color: #37C2BB;
+}
+

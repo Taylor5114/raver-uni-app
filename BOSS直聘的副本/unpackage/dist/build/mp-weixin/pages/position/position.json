@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "for-list": "/components/for-list",
+    "for-discussion": "/components/for-discussion"
+  }
+}

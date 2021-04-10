@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "for-list": "/components/for-list",
+    "job-card": "/components/job-card"
+  }
+}

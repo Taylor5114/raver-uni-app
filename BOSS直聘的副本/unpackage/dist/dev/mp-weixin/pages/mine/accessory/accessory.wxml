@@ -1,0 +1,1 @@
+<view class="body"><view class="accessory"><block wx:if="{{true}}"><view class="nothing"><image src="../../../static/image/nothing.png" mode></image><view class="_p">暂无附件简历</view></view></block></view><view class="footer"><view class="_p">附件简历在BOSS向你索取且经你统一。或你主动发送才会提供给对方。BOSS将你转发给同事时，可能会将附件简历一并转发</view><button type="default">上传新附件</button></view></view>

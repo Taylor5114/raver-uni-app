@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "BOSS直聘",
+  "usingComponents": {
+    "set-msg": "/components/set-msg"
+  }
+}

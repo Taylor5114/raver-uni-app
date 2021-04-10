@@ -1,0 +1,1 @@
+<view><set-msg vue-id="3267e520-1" width="{{width}}" height="{{height}}" cont="{{cont}}" bind:__l="__l"></set-msg></view>
