@@ -55,7 +55,7 @@
 			ttmsg(){
 				this.cont[0].msage.push(
 					{
-						head:'../../static/1x1img/1.jpg',
+						head:'../../static/1x1img/2.jpg',
 						name:'宋yue',
 						position:'东道智能·HR',
 						date:'昨天',
@@ -95,13 +95,11 @@
 	.main{
 		width: 100%;
 		background-color: #F8F8F8;
-		display: flex;
-		justify-content: center;
 	}
 	.mainin{
 		width: 90%;
-		background-color: #37C2BB;
-		
+		margin-left: 5%;
+		/* background-color: #37C2BB; */
 	}
 	.msage{
 		width: 100%;
@@ -138,23 +136,30 @@
 		justify-content: space-between;
 	}
 	.line02{
-		display: flex;
+		line-height: 50rpx;
 	}
 	.l01-l{
 		display: flex;
 	}
+	.l01-r{
+		display: flex;
+		align-items: center;
+	}
 	.name{		
-		
+		margin-right: 20rpx;
 	}
 	.position,.date{
 		font-size: 20rpx;
 		color: #AAAAAA;
+		display: flex;
+		align-items: center;
 	}
 	.msg{
-		font-size: 25rpx;
+		font-size: 30rpx;
 		color: #AAAAAA;
 	}
 	.msg-r image{
+		margin-top: 32rpx;
 		width:40rpx;
 		height: 40rpx;
 	}

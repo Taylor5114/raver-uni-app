@@ -19,81 +19,81 @@
 						title:'消息', 
 						msage:[
 							{
-								head:'../../static/1x1img/1.jpg',
+								head:'../../static/1x1img/7.jpg',
 								name:'宋阳阳',
 								position:'东道智能·HR',
 								date:'昨天',
-								msg:'等考虑工作的时候 可以优先考虑我们公司'
+								msg:'你好，方便聊聊吗？'
 							},
 							{
 								head:'../../static/1x1img/1.jpg',
 								name:'宋阳阳',
 								position:'东道智能·HR',
 								date:'昨天',
-								msg:'等考虑工作的时候 可以优先考虑我们公司'
+								msg:'你好，方便聊聊吗？'
+							},
+							{
+								head:'../../static/1x1img/2.jpg',
+								name:'宋阳阳',
+								position:'东道智能·HR',
+								date:'昨天',
+								msg:'你好，方便聊聊吗？'
+							},
+							{
+								head:'../../static/1x1img/4.jpg',
+								name:'宋阳阳',
+								position:'东道智能·HR',
+								date:'昨天',
+								msg:'你好，方便聊聊吗？'
+							},
+							{
+								head:'../../static/1x1img/5.jpg',
+								name:'宋阳阳',
+								position:'东道智能·HR',
+								date:'昨天',
+								msg:'你好，方便聊聊吗？'
+							},
+							{
+								head:'../../static/1x1img/6.jpg',
+								name:'宋阳阳',
+								position:'东道智能·HR',
+								date:'昨天',
+								msg:'你好，方便聊聊吗？'
+							},
+							{
+								head:'../../static/1x1img/7.jpg',
+								name:'宋阳阳',
+								position:'东道智能·HR',
+								date:'昨天',
+								msg:'你好，方便聊聊吗？'
 							},
 							{
 								head:'../../static/1x1img/1.jpg',
 								name:'宋阳阳',
 								position:'东道智能·HR',
 								date:'昨天',
-								msg:'等考虑工作的时候 可以优先考虑我们公司'
+								msg:'你好，方便聊聊吗？'
 							},
 							{
 								head:'../../static/1x1img/1.jpg',
 								name:'宋阳阳',
 								position:'东道智能·HR',
 								date:'昨天',
-								msg:'等考虑工作的时候 可以优先考虑我们公司'
+								msg:'你好，方便聊聊吗？'
 							},
 							{
 								head:'../../static/1x1img/1.jpg',
 								name:'宋阳阳',
 								position:'东道智能·HR',
 								date:'昨天',
-								msg:'等考虑工作的时候 可以优先考虑我们公司'
+								msg:'你好，方便聊聊吗？'
 							},
 							{
 								head:'../../static/1x1img/1.jpg',
 								name:'宋阳阳',
 								position:'东道智能·HR',
 								date:'昨天',
-								msg:'等考虑工作的时候 可以优先考虑我们公司'
-							},
-							{
-								head:'../../static/1x1img/1.jpg',
-								name:'宋阳阳',
-								position:'东道智能·HR',
-								date:'昨天',
-								msg:'等考虑工作的时候 可以优先考虑我们公司'
-							},
-							{
-								head:'../../static/1x1img/1.jpg',
-								name:'宋阳阳',
-								position:'东道智能·HR',
-								date:'昨天',
-								msg:'等考虑工作的时候 可以优先考虑我们公司'
-							},
-							{
-								head:'../../static/1x1img/1.jpg',
-								name:'宋阳阳',
-								position:'东道智能·HR',
-								date:'昨天',
-								msg:'等考虑工作的时候 可以优先考虑我们公司'
-							},
-							{
-								head:'../../static/1x1img/1.jpg',
-								name:'宋阳阳',
-								position:'东道智能·HR',
-								date:'昨天',
-								msg:'等考虑工作的时候 可以优先考虑我们公司'
-							},
-							{
-								head:'../../static/1x1img/1.jpg',
-								name:'宋阳阳',
-								position:'东道智能·HR',
-								date:'昨天',
-								msg:'等考虑工作的时候 可以优先考虑我们公司'
+								msg:'你好，方便聊聊吗？'
 							}
 						]
 					},
