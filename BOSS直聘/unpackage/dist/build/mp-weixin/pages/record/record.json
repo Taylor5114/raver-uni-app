@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText": "BOSS直聘",
   "usingComponents": {
-    "set-vote": "/components/set-vote"
+    "set-msg": "/components/set-msg"
   }
 }

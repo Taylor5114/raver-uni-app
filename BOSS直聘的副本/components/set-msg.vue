@@ -18,6 +18,7 @@
 								</view>
 								<view class="l01-r">
 									<p class='date'>{{msage.date}}</p>
+									<image src="../static/image/more.png" mode=""></image> 
 								</view>
 							</view>
 							<view class="line02 msg">
@@ -25,7 +26,7 @@
 							</view>
 						</view>
 						<view class="msg-r">
-							<image src="../static/image/more.png" mode=""></image>
+							
 						</view>
 					</view>
 				</view>
@@ -115,16 +116,12 @@
 		align-items: center;
 	}
 	.msg-c{
-		width: 450rpx;
+		/* width: 450rpx; */
 		height: 100%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-	}
-	.msg-r{
-		width: 60rpx;
-		height: 100%;
-		
+		flex-grow: 1;
 	}
 	.msg-l image{
 		width: 100rpx;
@@ -134,6 +131,7 @@
 	.line01{
 		display: flex;
 		justify-content: space-between;
+		/* background-color: #007AFF; */
 	}
 	.line02{
 		line-height: 50rpx;
@@ -158,8 +156,8 @@
 		font-size: 30rpx;
 		color: #AAAAAA;
 	}
-	.msg-r image{
-		margin-top: 32rpx;
+	.line01 image{
+		margin-left: 20rpx;
 		width:40rpx;
 		height: 40rpx;
 	}
