@@ -2,7 +2,7 @@
 
 /***/ 19:
 /*!*********************************************************************************************************!*\
-  !*** /Users/raver/Documents/GitHub/raver-uni-app/Taytay/main.js?{"page":"pages%2Fposition%2Fposition"} ***!
+  !*** /Users/raver/Documents/GitHub/raver-uni-app/BOSS直聘/main.js?{"page":"pages%2Fposition%2Fposition"} ***!
   \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -18,7 +18,7 @@ createPage(_position.default);
 
 /***/ 20:
 /*!**************************************************************************************!*\
-  !*** /Users/raver/Documents/GitHub/raver-uni-app/Taytay/pages/position/position.vue ***!
+  !*** /Users/raver/Documents/GitHub/raver-uni-app/BOSS直聘/pages/position/position.vue ***!
   \**************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -59,7 +59,7 @@ component.options.__file = "pages/position/position.vue"
 
 /***/ 21:
 /*!*********************************************************************************************************************!*\
-  !*** /Users/raver/Documents/GitHub/raver-uni-app/Taytay/pages/position/position.vue?vue&type=template&id=54e104a6& ***!
+  !*** /Users/raver/Documents/GitHub/raver-uni-app/BOSS直聘/pages/position/position.vue?vue&type=template&id=54e104a6& ***!
   \*********************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -81,7 +81,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ 22:
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!/Users/raver/Documents/GitHub/raver-uni-app/Taytay/pages/position/position.vue?vue&type=template&id=54e104a6& ***!
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!/Users/raver/Documents/GitHub/raver-uni-app/BOSS直聘/pages/position/position.vue?vue&type=template&id=54e104a6& ***!
   \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -108,7 +108,7 @@ render._withStripped = true
 
 /***/ 23:
 /*!***************************************************************************************************************!*\
-  !*** /Users/raver/Documents/GitHub/raver-uni-app/Taytay/pages/position/position.vue?vue&type=script&lang=js& ***!
+  !*** /Users/raver/Documents/GitHub/raver-uni-app/BOSS直聘/pages/position/position.vue?vue&type=script&lang=js& ***!
   \***************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -124,13 +124,13 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ 24:
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!/Users/raver/Documents/GitHub/raver-uni-app/Taytay/pages/position/position.vue?vue&type=script&lang=js& ***!
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!/Users/raver/Documents/GitHub/raver-uni-app/BOSS直聘/pages/position/position.vue?vue&type=script&lang=js& ***!
   \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var forList = function forList() {__webpack_require__.e(/*! require.ensure | components/for-list */ "components/for-list").then((function () {return resolve(__webpack_require__(/*! ../../components/for-list.vue */ 89));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var forDiscussion = function forDiscussion() {__webpack_require__.e(/*! require.ensure | components/for-discussion */ "components/for-discussion").then((function () {return resolve(__webpack_require__(/*! ../../components/for-discussion.vue */ 103));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var forList = function forList() {__webpack_require__.e(/*! require.ensure | components/for-list */ "components/for-list").then((function () {return resolve(__webpack_require__(/*! ../../components/for-list.vue */ 83));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var forDiscussion = function forDiscussion() {__webpack_require__.e(/*! require.ensure | components/for-discussion */ "components/for-discussion").then((function () {return resolve(__webpack_require__(/*! ../../components/for-discussion.vue */ 97));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
@@ -365,7 +365,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ 25:
 /*!***********************************************************************************************************************!*\
-  !*** /Users/raver/Documents/GitHub/raver-uni-app/Taytay/pages/position/position.vue?vue&type=style&index=0&lang=css& ***!
+  !*** /Users/raver/Documents/GitHub/raver-uni-app/BOSS直聘/pages/position/position.vue?vue&type=style&index=0&lang=css& ***!
   \***********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -381,7 +381,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ 26:
 /*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!/Users/raver/Documents/GitHub/raver-uni-app/Taytay/pages/position/position.vue?vue&type=style&index=0&lang=css& ***!
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!/Users/raver/Documents/GitHub/raver-uni-app/BOSS直聘/pages/position/position.vue?vue&type=style&index=0&lang=css& ***!
   \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {

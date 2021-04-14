@@ -105,11 +105,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"components/for-list":1,"components/job-card":1,"components/for-discussion":1,"components/set-count":1};
+/******/ 		var cssChunks = {"components/for-list":1,"components/job-card":1,"components/for-discussion":1,"components/set-count":1,"components/set-msg":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"components/for-list":"components/for-list","components/job-card":"components/job-card","components/for-discussion":"components/for-discussion","components/set-count":"components/set-count"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"components/for-list":"components/for-list","components/job-card":"components/job-card","components/for-discussion":"components/for-discussion","components/set-count":"components/set-count","components/set-msg":"components/set-msg"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {

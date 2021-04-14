@@ -1,5 +1,5 @@
 <template>
-	<view class="job-card">
+	<view class="job-card" style="{height: height+'px';}">
 		<view v-for="(item,index) in job" class="cc">
 			<view class="cards">
 				<view class="line01">
@@ -34,7 +34,9 @@
 	export default {
 		name:"job-card",
 		props:{
-			job: Array
+			job: Array,
+			topheight:Number,
+			height:Number
 		},
 		data() {
 			return {
@@ -50,6 +52,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		background-color: #007AFF;
 	}
 	.cc{
 		width: 100%;

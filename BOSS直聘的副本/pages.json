@@ -57,10 +57,6 @@
                 "navigationBarTitleText" : "",
                 "enablePullDownRefresh" : false
             }
-        },
-        {
-            "path" : "components/set-msg",
-            "style" : {}
         }
     ],
     "globalStyle" : {

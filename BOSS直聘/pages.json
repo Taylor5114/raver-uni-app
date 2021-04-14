@@ -10,12 +10,6 @@
             "style" : {}
         },
         {
-            "path" : "pages/record/record",
-            "style" : {
-                "navigationBarTitleText" : "BOSS直聘"
-            }
-        },
-        {
             "path" : "pages/mine/mine",
             "style" : {}
         },
@@ -57,10 +51,15 @@
                 "navigationBarTitleText" : "",
                 "enablePullDownRefresh" : false
             }
-        },
-        {
-            "path" : "components/set-msg",
-            "style" : {}
+        }
+        ,{
+            "path" : "pages/record/record",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
         }
     ],
     "globalStyle" : {

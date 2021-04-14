@@ -2,14 +2,13 @@
   "pages": [
     "pages/index/index",
     "pages/position/position",
-    "pages/record/record",
     "pages/mine/mine",
     "pages/mine/resume/resume",
     "pages/mine/accessory/accessory",
     "pages/mine/interview/interview",
     "pages/mine/subscription/subscription",
     "pages/index/search/search",
-    "components/set-msg"
+    "pages/record/record"
   ],
   "subPackages": [],
   "window": {
@@ -50,5 +49,6 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
 }

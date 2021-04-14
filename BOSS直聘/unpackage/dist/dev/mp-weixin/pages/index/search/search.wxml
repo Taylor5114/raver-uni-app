@@ -1,1 +1,1 @@
-<view><scroll-view class="aa" scroll-y="true" data-event-opts="{{[['scroll',[['aa',['$event']]]]]}}" bindscroll="__e"><view class="bb">123123</view></scroll-view></view>
+<view><scroll-view class="aa" scroll-y="true" data-event-opts="{{[['scroll',[['aa',['$event']]]]]}}" bindscroll="__e"><view class="dd"><view class="bb"></view><view class="cc"></view></view></scroll-view></view>

@@ -1,6 +1,8 @@
 {
-  "navigationBarTitleText": "BOSS直聘",
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
   "usingComponents": {
-    "set-msg": "/components/set-msg"
+    "set-msg": "/components/set-msg",
+    "job-card": "/components/job-card"
   }
 }
