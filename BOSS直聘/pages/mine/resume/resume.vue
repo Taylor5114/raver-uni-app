@@ -12,9 +12,7 @@
 				<p class='pp'>上传求值照片被BOSS回复的几率翻倍</p>
 			</view>
 			<view class="t-right">
-				<view class="">
-					<image src="../../../static/image/camera.png" mode=""></image>
-				</view>
+					<upimg></upimg>
 			</view> 
 		</view>  
 		<view class='line'></view>
@@ -45,14 +43,14 @@
 		<view class='line'></view>
 		<view class="name demo02">
 			<h4>出生年月</h4>
-			<input placeholder="请选择出生年月">
+			<dtpicker msg='请选择出生年月' fields='month'></dtpicker>
 		</view>
 		<view class='line'></view>
-		<view class="name demo02">
+		<view class="name demo02" v-show="workplace==true">
 			<h4>参加工作时间</h4>
-			<input placeholder="请选择参加工作时间">
+			<dtpicker msg='请选择参加工作时间' fields='month'></dtpicker>
 		</view>
-		<view class='line'></view>
+		<view class='line' v-show="workplace==true"></view> 
 		<view class="confirm">
 			<button>确定</button><strong></strong>
 		</view>
@@ -60,7 +58,13 @@
 </template>
 
 <script>
+	import upimg from '../../../components/sunui-upimg/sunui-upimg.vue';
+	import dtpicker from '../../../components/dtpicker/rattenking-dtpicker.vue';
 	export default {
+		components:{
+			upimg,
+			dtpicker
+		},
 		data() {
 			return {
 				man: false,
@@ -142,7 +146,7 @@
 	}
 	.pp{
 		color: #6B6B6B;
-		font-size: 16rpx;
+		font-size: 20rpx;
 	}
 	.t-left{
 		display: flex;

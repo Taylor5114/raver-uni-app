@@ -2,5 +2,8 @@
   "navigationBarTitleText": "",
   "enablePullDownRefresh": false,
   "navigationBarBackgroundColor": "#FFFFFF",
-  "usingComponents": {}
+  "usingComponents": {
+    "upimg": "/components/sunui-upimg/sunui-upimg",
+    "dtpicker": "/components/dtpicker/rattenking-dtpicker"
+  }
 }

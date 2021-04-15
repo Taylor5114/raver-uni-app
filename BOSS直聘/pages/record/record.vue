@@ -167,7 +167,7 @@
 			const query = uni.createSelectorQuery().in(this);     //这样写就只会选择本页面组件的类名box的
 			query.selectAll('.top').boundingClientRect(data => {   //回调函数，data中存储的是这些元素节点（每个节点的信息存为一个对象）的位置信息
 			  console.log("得到布局位置信息" + JSON.stringify(data));
-			  console.log("节点离页面顶部的距离为" + data[0].height);  //本页面共有三个，这里我只打印第二个的
+			  console.log("节点的高度为" + data[0].height);  //打印元素
 			  this.topheight = data[0].height;
 			}).exec();
 		}
