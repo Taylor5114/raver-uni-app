@@ -130,7 +130,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var forList = function forList() {__webpack_require__.e(/*! require.ensure | components/for-list */ "components/for-list").then((function () {return resolve(__webpack_require__(/*! ../../components/for-list.vue */ 83));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var forDiscussion = function forDiscussion() {__webpack_require__.e(/*! require.ensure | components/for-discussion */ "components/for-discussion").then((function () {return resolve(__webpack_require__(/*! ../../components/for-discussion.vue */ 97));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var forList = function forList() {__webpack_require__.e(/*! require.ensure | components/for-list */ "components/for-list").then((function () {return resolve(__webpack_require__(/*! ../../components/for-list.vue */ 81));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var forDiscussion = function forDiscussion() {__webpack_require__.e(/*! require.ensure | components/for-discussion */ "components/for-discussion").then((function () {return resolve(__webpack_require__(/*! ../../components/for-discussion.vue */ 95));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 

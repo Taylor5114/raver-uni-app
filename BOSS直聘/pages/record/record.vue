@@ -10,22 +10,22 @@
 			<scroll-view class="main" scroll-y='true' :style='{height:height-topheight+"px",width:width+"px"}'>
 				<swiper duration=200 disable-touch='true' :current="id" :style='{height:height+"px",width:width+"px"}'>
 					<swiper-item>
-						<scroll-view scroll-y="true" :style='{height:height-topheight+"px"}'>
+						<scroll-view scroll-y="true" :style='{height:height-topheight+"px"}' @scrolltolower='ttmsg()'>
 							<setMsg :topheight='topheight' :width='width' :height='height' :msage='msage'></setMsg>
 						</scroll-view>
 					</swiper-item>
 					<swiper-item>
-						<scroll-view scroll-y="true" :style='{height:height-topheight+"px"}'>
+						<scroll-view scroll-y="true" :style='{height:height-topheight+"px"}' @scrolltolower='ttjob()'>
 							<jobCard :topheight='topheight' :width='width' :height='height' :job='job'></jobCard>
 						</scroll-view>
 					</swiper-item>
 					<swiper-item>
-						<scroll-view scroll-y="true" :style='{height:height-topheight+"px"}'>
+						<scroll-view scroll-y="true" :style='{height:height-topheight+"px"}' @scrolltolower='ttjob()'>
 							<jobCard :topheight='topheight' :width='width' :height='height' :job='job'></jobCard>
 						</scroll-view>
 					</swiper-item>
 					<swiper-item>
-						<scroll-view scroll-y="true" :style='{height:height-topheight+"px"}'>
+						<scroll-view scroll-y="true" :style='{height:height-topheight+"px"}' @scrolltolower='ttjob()'>
 							<jobCard :topheight='topheight' :width='width' :height='height' :job='job'></jobCard>
 						</scroll-view>
 					</swiper-item>
@@ -69,7 +69,7 @@
 					{position:'运维工程师',pay:'3-6K·13薪',company:'广联云志',num:'0-20人',condition:['1年以内','大专','音视频 技术支持 调试'],
 					img:'../../static/1x1img/9.jpg',name:'张彩云 经理',address:'张店区 尚美第三城',state:'未融资'},
 					{position:'运维工程师',pay:'3-6K·13薪',company:'广联云志',num:'0-20人',condition:['1年以内','大专','音视频 技术支持 调试'],
-					img:'../../static/1x1img/.jpg',name:'张彩云 经理',address:'张店区 尚美第三城',state:'未融资'},
+					img:'../../static/1x1img/10.jpg',name:'张彩云 经理',address:'张店区 尚美第三城',state:'未融资'},
 				],
 				msage:[
 					{
@@ -144,6 +144,7 @@
 				this.id = index;
 			},
 			ttmsg(){
+				console.log("msg+1")
 				this.msage.push(
 					{
 						head:'../../static/1x1img/1.jpg',
@@ -152,6 +153,13 @@
 						date:'昨天',
 						msg:'等考虑工作的时候 可以优先考虑我们公司'
 					}
+				);
+			},
+			ttjob(){
+				console.log("job+1")
+				this.job.push(
+					{position:'运维工程师',pay:'3-6K·13薪',company:'广联云志',num:'0-20人',condition:['1年以内','大专','音视频 技术支持 调试'],
+					img:'../../static/1x1img/11.jpg',name:'张彩云 经理',address:'张店区 尚美第三城',state:'未融资'}
 				);
 			}
 		},

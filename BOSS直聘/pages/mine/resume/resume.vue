@@ -9,10 +9,12 @@
 		<view class="touxiang">
 			<view class="t-left">
 				<h4>头像</h4>
-				<p class='pp'>上传求值照片被BOSS回复的几率翻倍</p>
+				<p class='pp'>上传求职照片被BOSS回复的几率翻倍</p>
 			</view>
 			<view class="t-right">
-					<upimg></upimg>
+					<view class="">
+						<image src="../../../static/image/camera.png" mode=""></image>
+					</view>
 			</view> 
 		</view>  
 		<view class='line'></view>

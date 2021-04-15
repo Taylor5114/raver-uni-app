@@ -34,7 +34,9 @@
 					<h3>推荐职位</h3>
 					<image src="../../static/image/bixin.png" mode=""></image>
 				</view>
-				<jobCard :topheight='topheight' :width='width' :height='height' :job='job'></jobCard>
+				<scroll-view scroll-y="true" :style='{height:height-topheight+"px"}' @scrolltolower='ttjob()'>
+					<jobCard :topheight='topheight' :width='width' :height='height' :job='job'></jobCard>
+				</scroll-view>
 			</view>
 		</view>
 	</view>
@@ -87,7 +89,13 @@
 			}
 		},
 		methods: {
-			
+			ttjob(){
+				console.log("job+1")
+				this.job.push(
+					{position:'运维工程师++',pay:'3-6K·13薪',company:'广联云志',num:'0-20人',condition:['1年以内','大专','音视频 技术支持 调试'],
+					img:'../../static/1x1img/11.jpg',name:'张彩云 经理',address:'张店区 尚美第三城',state:'未融资'}
+				);
+			}
 		},
 		onLoad() {
 			uni.getSystemInfo({
@@ -101,7 +109,7 @@
 			const query = uni.createSelectorQuery().in(this);     
 			query.selectAll('.top').boundingClientRect(data => {   
 			  console.log("得到布局位置信息" + JSON.stringify(data));
-			  console.log("节点离页面顶部的距离为" + data[0].height);  
+			  console.log("节点高度为" + data[0].height);  
 			  this.topheight = data[0].height;
 			}).exec();
 		}
