@@ -1,5 +1,5 @@
 <template>
-	<view class="content">
+	<view class="content" :style='{height:height-topheight+"px",width:width+"px"}'>
 		<view class="main">
 			<view v-for="(msage,index) in msage" class="msage">
 				<view class="msg-l">
@@ -32,7 +32,9 @@
 		name:"set-msg",
 		props:{
 			msage:Array,
-			topheight:Number
+			topheight:Number,
+			width:Number,
+			height:Number
 		},
 		data() {
 			return {

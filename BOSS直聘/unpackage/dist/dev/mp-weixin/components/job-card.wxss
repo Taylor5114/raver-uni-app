@@ -1,6 +1,5 @@
 
 .job-card{
-	width: 100%;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: flex;

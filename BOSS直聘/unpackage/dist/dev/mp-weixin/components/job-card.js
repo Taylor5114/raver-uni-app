@@ -150,7 +150,10 @@ var _default =
 {
   name: "job-card",
   props: {
-    job: Array },
+    job: Array,
+    topheight: Number,
+    width: Number,
+    height: Number },
 
   data: function data() {
     return {};

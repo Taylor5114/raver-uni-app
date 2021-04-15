@@ -34,7 +34,7 @@
 					<h3>推荐职位</h3>
 					<image src="../../static/image/bixin.png" mode=""></image>
 				</view>
-				<jobCard :job='job'></jobCard>
+				<jobCard :topheight='topheight' :width='width' :height='height' :job='job'></jobCard>
 			</view>
 		</view>
 	</view>
@@ -50,6 +50,9 @@
 		},
 		data() {
 			return {
+				width:0,
+				height:0,
+				topheight:0,
 				navs:[
 					{title:'附近工作',img:'../../static/image/fujin.png'},
 					{title:'找兼职',img:'../../static/image/jianzhi.png'},
@@ -85,6 +88,22 @@
 		},
 		methods: {
 			
+		},
+		onLoad() {
+			uni.getSystemInfo({
+				success:(res)=> {
+					this.height = res.windowHeight;
+					this.width = res.windowWidth;
+				}
+			});
+		},
+		onReady() {
+			const query = uni.createSelectorQuery().in(this);     
+			query.selectAll('.top').boundingClientRect(data => {   
+			  console.log("得到布局位置信息" + JSON.stringify(data));
+			  console.log("节点离页面顶部的距离为" + data[0].height);  
+			  this.topheight = data[0].height;
+			}).exec();
 		}
 	}
 </script>

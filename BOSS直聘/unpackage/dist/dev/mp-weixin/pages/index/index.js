@@ -135,7 +135,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var forList = function forList() {__webpack_require__.e(/*! require.ensure | components/for-list */ "components/for-list").then((function () {return resolve(__webpack_require__(/*! ../../components/for-list.vue */ 83));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var jobCard = function jobCard() {__webpack_require__.e(/*! require.ensure | components/job-card */ "components/job-card").then((function () {return resolve(__webpack_require__(/*! ../../components/job-card.vue */ 90));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var forList = function forList() {__webpack_require__.e(/*! require.ensure | components/for-list */ "components/for-list").then((function () {return resolve(__webpack_require__(/*! ../../components/for-list.vue */ 83));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var jobCard = function jobCard() {__webpack_require__.e(/*! require.ensure | components/job-card */ "components/job-card").then((function () {return resolve(__webpack_require__(/*! ../../components/job-card.vue */ 90));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
@@ -187,6 +187,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
   data: function data() {
     return {
+      width: 0,
+      height: 0,
+      topheight: 0,
       navs: [
       { title: '附近工作', img: '../../static/image/fujin.png' },
       { title: '找兼职', img: '../../static/image/jianzhi.png' },
@@ -220,7 +223,26 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
   },
-  methods: {} };exports.default = _default;
+  methods: {},
+
+
+  onLoad: function onLoad() {var _this = this;
+    uni.getSystemInfo({
+      success: function success(res) {
+        _this.height = res.windowHeight;
+        _this.width = res.windowWidth;
+      } });
+
+  },
+  onReady: function onReady() {var _this2 = this;
+    var query = uni.createSelectorQuery().in(this);
+    query.selectAll('.top').boundingClientRect(function (data) {
+      console.log("得到布局位置信息" + JSON.stringify(data));
+      console.log("节点离页面顶部的距离为" + data[0].height);
+      _this2.topheight = data[0].height;
+    }).exec();
+  } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 /* 17 */

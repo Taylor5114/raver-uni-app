@@ -1210,7 +1210,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "v-uni-view",
-    { staticClass: _vm._$g(0, "sc"), attrs: { _i: 0 } },
+    { staticClass: _vm._$g(0, "sc"), style: _vm._$g(0, "s"), attrs: { _i: 0 } },
     _vm._l(_vm._$g(1, "f"), function(item, index, $20, $30) {
       return _c(
         "v-uni-view",
@@ -1396,7 +1396,7 @@ __webpack_require__.r(__webpack_exports__);
 Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default =
 
 {
-  name: "job-card", props: ["job"],
+  name: "job-card", props: ["job", "topheight", "width", "height"],
   data: function data() {
     return {
       wxsProps: {} };
@@ -1451,7 +1451,7 @@ if(false) {}
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/css-loader/dist/runtime/api.js */ 15);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "\n.job-card[data-v-1b1f994a]{\n\twidth: 100%;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-orient: vertical;\n\t-webkit-box-direction: normal;\n\t-webkit-flex-direction: column;\n\t        flex-direction: column;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n}\n.cc[data-v-1b1f994a]{\n\twidth: 100%;\n\theight: 310rpx;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-orient: vertical;\n\t-webkit-box-direction: normal;\n\t-webkit-flex-direction: column;\n\t        flex-direction: column;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n}\n.line[data-v-1b1f994a]{\n\twidth: 100%;\n\theight: 10rpx;\n\tbackground-color: #F6F6F6;\n}\n.cards[data-v-1b1f994a]{\n\twidth: 90%;\n\theight: 300rpx;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-orient: vertical;\n\t-webkit-box-direction: normal;\n\t-webkit-flex-direction: column;\n\t        flex-direction: column;\n\t-webkit-justify-content: space-around;\n\t        justify-content: space-around;\n}\n.line01[data-v-1b1f994a]{\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-pack: justify;\n\t-webkit-justify-content: space-between;\n\t        justify-content: space-between;\n}\n.line02[data-v-1b1f994a]{\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-pack: start;\n\t-webkit-justify-content: flex-start;\n\t        justify-content: flex-start;\n\tcolor: #929292;\n}\n.line02 p[data-v-1b1f994a]{\n\tfont-size: 28rpx;\n\tmargin-right: 20rpx;\n}\n.line03 uni-view[data-v-1b1f994a]{\n\theight: 40rpx;\n\tline-height: 20rpx;\n\tmargin-right: 10rpx;\n\t-webkit-border-radius: 8rpx;\n\t        border-radius: 8rpx;\n\twidth: auto;\n\tbackground-color: #F5F5F5;\n}\n.line03 uni-view p[data-v-1b1f994a]{\n\tpadding: 10rpx;\n}\n.line03[data-v-1b1f994a]{\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-pack: start;\n\t-webkit-justify-content: flex-start;\n\t        justify-content: flex-start;\n\tcolor: #686868;\n\tfont-size: 20rpx;\n}\n.line04[data-v-1b1f994a]{\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-pack: justify;\n\t-webkit-justify-content: space-between;\n\t        justify-content: space-between;\n}\n.l04-l[data-v-1b1f994a]{\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n}\n.l04-l uni-image[data-v-1b1f994a]{\n\twidth: 50rpx;\n\theight: 50rpx;\n\t-webkit-border-radius: 25rpx;\n\t        border-radius: 25rpx;\n}\n.name[data-v-1b1f994a]{\n\tfont-size: 20rpx;\n\tmargin-left: 20rpx;\n}\n.address[data-v-1b1f994a]{\n\tfont-size: 20rpx;\n\tcolor: #B9B9B9;\n}\n.pay[data-v-1b1f994a]{\n\tcolor: #37C2BB;\n}\n", ""]);
+exports.push([module.i, "\n.job-card[data-v-1b1f994a]{\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-orient: vertical;\n\t-webkit-box-direction: normal;\n\t-webkit-flex-direction: column;\n\t        flex-direction: column;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n}\n.cc[data-v-1b1f994a]{\n\twidth: 100%;\n\theight: 310rpx;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-orient: vertical;\n\t-webkit-box-direction: normal;\n\t-webkit-flex-direction: column;\n\t        flex-direction: column;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n}\n.line[data-v-1b1f994a]{\n\twidth: 100%;\n\theight: 10rpx;\n\tbackground-color: #F6F6F6;\n}\n.cards[data-v-1b1f994a]{\n\twidth: 90%;\n\theight: 300rpx;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-orient: vertical;\n\t-webkit-box-direction: normal;\n\t-webkit-flex-direction: column;\n\t        flex-direction: column;\n\t-webkit-justify-content: space-around;\n\t        justify-content: space-around;\n}\n.line01[data-v-1b1f994a]{\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-pack: justify;\n\t-webkit-justify-content: space-between;\n\t        justify-content: space-between;\n}\n.line02[data-v-1b1f994a]{\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-pack: start;\n\t-webkit-justify-content: flex-start;\n\t        justify-content: flex-start;\n\tcolor: #929292;\n}\n.line02 p[data-v-1b1f994a]{\n\tfont-size: 28rpx;\n\tmargin-right: 20rpx;\n}\n.line03 uni-view[data-v-1b1f994a]{\n\theight: 40rpx;\n\tline-height: 20rpx;\n\tmargin-right: 10rpx;\n\t-webkit-border-radius: 8rpx;\n\t        border-radius: 8rpx;\n\twidth: auto;\n\tbackground-color: #F5F5F5;\n}\n.line03 uni-view p[data-v-1b1f994a]{\n\tpadding: 10rpx;\n}\n.line03[data-v-1b1f994a]{\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-pack: start;\n\t-webkit-justify-content: flex-start;\n\t        justify-content: flex-start;\n\tcolor: #686868;\n\tfont-size: 20rpx;\n}\n.line04[data-v-1b1f994a]{\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-pack: justify;\n\t-webkit-justify-content: space-between;\n\t        justify-content: space-between;\n}\n.l04-l[data-v-1b1f994a]{\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n}\n.l04-l uni-image[data-v-1b1f994a]{\n\twidth: 50rpx;\n\theight: 50rpx;\n\t-webkit-border-radius: 25rpx;\n\t        border-radius: 25rpx;\n}\n.name[data-v-1b1f994a]{\n\tfont-size: 20rpx;\n\tmargin-left: 20rpx;\n}\n.address[data-v-1b1f994a]{\n\tfont-size: 20rpx;\n\tcolor: #B9B9B9;\n}\n.pay[data-v-1b1f994a]{\n\tcolor: #37C2BB;\n}\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -4364,8 +4364,11 @@ var render = function() {
                     { attrs: { _i: 7 } },
                     [
                       _c(
-                        "v-uni-view",
-                        { staticClass: _vm._$g(8, "sc"), attrs: { _i: 8 } },
+                        "v-uni-scroll-view",
+                        {
+                          style: _vm._$g(8, "s"),
+                          attrs: { "scroll-y": "true", _i: 8 }
+                        },
                         [_c("setMsg", { attrs: { _i: 9 } })],
                         1
                       )
@@ -4377,19 +4380,12 @@ var render = function() {
                     { attrs: { _i: 10 } },
                     [
                       _c(
-                        "v-uni-view",
-                        { staticClass: _vm._$g(11, "sc"), attrs: { _i: 11 } },
-                        [
-                          _c(
-                            "v-uni-scroll-view",
-                            {
-                              style: _vm._$g(12, "s"),
-                              attrs: { "scroll-y": "true", _i: 12 }
-                            },
-                            [_c("jobCard", { attrs: { _i: 13 } })],
-                            1
-                          )
-                        ],
+                        "v-uni-scroll-view",
+                        {
+                          style: _vm._$g(11, "s"),
+                          attrs: { "scroll-y": "true", _i: 11 }
+                        },
+                        [_c("jobCard", { attrs: { _i: 12 } })],
                         1
                       )
                     ],
@@ -4397,15 +4393,15 @@ var render = function() {
                   ),
                   _c(
                     "v-uni-swiper-item",
-                    { attrs: { _i: 14 } },
+                    { attrs: { _i: 13 } },
                     [
                       _c(
                         "v-uni-scroll-view",
                         {
-                          style: _vm._$g(15, "s"),
-                          attrs: { "scroll-y": "true", _i: 15 }
+                          style: _vm._$g(14, "s"),
+                          attrs: { "scroll-y": "true", _i: 14 }
                         },
-                        [_c("jobCard", { attrs: { _i: 16 } })],
+                        [_c("jobCard", { attrs: { _i: 15 } })],
                         1
                       )
                     ],
@@ -4413,15 +4409,15 @@ var render = function() {
                   ),
                   _c(
                     "v-uni-swiper-item",
-                    { attrs: { _i: 17 } },
+                    { attrs: { _i: 16 } },
                     [
                       _c(
                         "v-uni-scroll-view",
                         {
-                          style: _vm._$g(18, "s"),
-                          attrs: { "scroll-y": "true", _i: 18 }
+                          style: _vm._$g(17, "s"),
+                          attrs: { "scroll-y": "true", _i: 17 }
                         },
-                        [_c("jobCard", { attrs: { _i: 19 } })],
+                        [_c("jobCard", { attrs: { _i: 18 } })],
                         1
                       )
                     ],
@@ -4566,7 +4562,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "v-uni-view",
-    { staticClass: _vm._$g(0, "sc"), attrs: { _i: 0 } },
+    { staticClass: _vm._$g(0, "sc"), style: _vm._$g(0, "s"), attrs: { _i: 0 } },
     [
       _c(
         "v-uni-view",
@@ -4723,7 +4719,7 @@ __webpack_require__.r(__webpack_exports__);
 Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default =
 
 {
-  name: "set-msg", props: ["msage", "topheight"],
+  name: "set-msg", props: ["msage", "topheight", "width", "height"],
   data: function data() {
     return {
       wxsProps: {} };

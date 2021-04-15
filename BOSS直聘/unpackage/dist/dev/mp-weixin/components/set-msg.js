@@ -148,7 +148,9 @@ var _default =
   name: "set-msg",
   props: {
     msage: Array,
-    topheight: Number },
+    topheight: Number,
+    width: Number,
+    height: Number },
 
   data: function data() {
     return {};

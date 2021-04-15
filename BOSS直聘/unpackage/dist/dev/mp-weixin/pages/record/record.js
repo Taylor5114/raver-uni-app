@@ -170,8 +170,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
 {
   components: {
     setMsg: setMsg,
@@ -276,6 +274,17 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     change: function change(index) {
       this.id = index;
+    },
+    ttmsg: function ttmsg() {
+      this.msage.push(
+      {
+        head: '../../static/1x1img/1.jpg',
+        name: '宋yue',
+        position: '东道智能·HR',
+        date: '昨天',
+        msg: '等考虑工作的时候 可以优先考虑我们公司' });
+
+
     } },
 
   onLoad: function onLoad() {var _this = this;

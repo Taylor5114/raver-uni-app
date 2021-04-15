@@ -10,25 +10,23 @@
 			<scroll-view class="main" scroll-y='true' :style='{height:height-topheight+"px",width:width+"px"}'>
 				<swiper duration=200 disable-touch='true' :current="id" :style='{height:height+"px",width:width+"px"}'>
 					<swiper-item>
-						<view class="swiper-item">
-							<setMsg :topheight='topheight' :height='height' :msage='msage'></setMsg>
-						</view>
-					</swiper-item>
-					<swiper-item>
-						<view class="swiper-item">
-							<scroll-view scroll-y="true" :style='{height:height-topheight+"px",width:width+"px"}'>
-								<jobCard :topheight='topheight' :height='height' :job='job'></jobCard>
-							</scroll-view>
-						</view>
-					</swiper-item>
-					<swiper-item>
-						<scroll-view scroll-y="true" :style='{height:height-topheight+"px",width:width+"px"}'>
-							<jobCard :topheight='topheight' :height='height' :job='job'></jobCard>
+						<scroll-view scroll-y="true" :style='{height:height-topheight+"px"}'>
+							<setMsg :topheight='topheight' :width='width' :height='height' :msage='msage'></setMsg>
 						</scroll-view>
 					</swiper-item>
 					<swiper-item>
-						<scroll-view scroll-y="true" :style='{height:height-topheight+"px",width:width+"px"}'>
-							<jobCard :topheight='topheight' :height='height' :job='job'></jobCard>
+						<scroll-view scroll-y="true" :style='{height:height-topheight+"px"}'>
+							<jobCard :topheight='topheight' :width='width' :height='height' :job='job'></jobCard>
+						</scroll-view>
+					</swiper-item>
+					<swiper-item>
+						<scroll-view scroll-y="true" :style='{height:height-topheight+"px"}'>
+							<jobCard :topheight='topheight' :width='width' :height='height' :job='job'></jobCard>
+						</scroll-view>
+					</swiper-item>
+					<swiper-item>
+						<scroll-view scroll-y="true" :style='{height:height-topheight+"px"}'>
+							<jobCard :topheight='topheight' :width='width' :height='height' :job='job'></jobCard>
 						</scroll-view>
 					</swiper-item>
 				</swiper>
@@ -144,6 +142,17 @@
 		methods: {
 			change(index){
 				this.id = index;
+			},
+			ttmsg(){
+				this.msage.push(
+					{
+						head:'../../static/1x1img/1.jpg',
+						name:'宋yue',
+						position:'东道智能·HR',
+						date:'昨天',
+						msg:'等考虑工作的时候 可以优先考虑我们公司'
+					}
+				);
 			}
 		},
 		onLoad() {
