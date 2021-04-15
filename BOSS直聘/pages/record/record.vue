@@ -5,7 +5,7 @@
 				<view class="navlist">
 					<text @click="change(index)" :class="{change:id==index}" 
 					v-for="(nav,index) in navlist" v-text="nav"></text>
-				</view>{{topheight}}
+				</view>
 			</view>
 			<scroll-view class="main" scroll-y='true' :style='{height:height-topheight+"px",width:width+"px"}'>
 				<swiper duration=200 disable-touch='true' :current="id" :style='{height:height+"px",width:width+"px"}'>

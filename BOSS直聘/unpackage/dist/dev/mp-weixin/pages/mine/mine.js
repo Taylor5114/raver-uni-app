@@ -200,6 +200,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
+
+
+
 {
   // 注册组件
   components: {
@@ -207,15 +210,19 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
   data: function data() {
     return {
-      str: '增加',
-      x: 1 };
+      height: 0,
+      width: 0,
+      user: {
+        name: 'Taylor Swift',
+        gender: '女',
+        headPortrait: '../../static/raver/taylor.jpeg',
+        birthTime: '1989-12-13',
+        entryTime: '2006-04-20',
+        isStudent: false } };
 
 
   },
-  methods: {
-    click: function click() {
-      this.x++;
-    } } };exports.default = _default;
+  methods: {} };exports.default = _default;
 
 /***/ }),
 

@@ -2399,7 +2399,7 @@ var render = function() {
             "v-uni-view",
             { staticClass: _vm._$g(2, "sc"), attrs: { _i: 2 } },
             [
-              _c("h1", { attrs: { _i: 3 } }, [_vm._v("無限進步")]),
+              _c("h1", { attrs: { _i: 3 } }, [_vm._v(_vm._$g(3, "t0-0"))]),
               _c("p", { attrs: { _i: 4 } }, [_vm._v("Infinite Progress")])
             ],
             1
@@ -2569,6 +2569,21 @@ var render = function() {
               _c("p", { attrs: { _i: 43 } }, [_vm._v("意见反馈")])
             ],
             1
+          )
+        ],
+        1
+      ),
+      _c(
+        "v-uni-view",
+        { staticClass: _vm._$g(44, "sc"), attrs: { _i: 44 } },
+        [
+          _c(
+            "v-uni-button",
+            {
+              staticClass: _vm._$g(45, "sc"),
+              attrs: { type: "default", _i: 45 }
+            },
+            [_vm._v("退出登录")]
           )
         ],
         1
@@ -2884,7 +2899,7 @@ var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../../static/image/n
 exports = ___CSS_LOADER_API_IMPORT___(false);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-exports.push([module.i, "\n.body{\n\twidth:100%;\n\theight: 1430rpx;\n\tbackground-color: #F5F5F5;\n\tfont-family: \"等线\";\n}\n.top{\n\twidth: 100%;\n\theight: 300rpx;\n\tbackground-color: #37C2BB;\n\tfont-weight: 100;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-align: end;\n\t-webkit-align-items: flex-end;\n\t        align-items: flex-end;\n\t-webkit-justify-content: space-around;\n\t        justify-content: space-around;\n}\n.name{\n\twidth:500rpx;\n\theight: 200rpx;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-orient: vertical;\n\t-webkit-box-direction: normal;\n\t-webkit-flex-direction: column;\n\t        flex-direction: column;\n\t-webkit-box-pack: end;\n\t-webkit-justify-content: flex-end;\n\t        justify-content: flex-end;\n}\n.top h1{\n\tfont-weight: 100;\n\tcolor: #FBFFFF;\n\tline-height: 20rpx;\n}\n.top p{\n\tcolor: #E5FAFA;\n\tfont-size: 30rpx;\n\tline-height: 90rpx;\n}\n.touxiang{\n\twidth: auto;\n\theight: 200rpx;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-pack: center;\n\t-webkit-justify-content: center;\n\t        justify-content: center;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n}\n.touxiang uni-image {\n\twidth: 160rpx;\n\theight: 160rpx;\n}\n.fun{\n\twidth: 100%;\n\theight: 200rpx;\n\tbackground-color: #FFFFFF;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n\t-webkit-justify-content: space-around;\n\t        justify-content: space-around;\n}\n.fun li{\n\tlist-style: none;\n\twidth: 150rpx;\n\theight: 130rpx;\n}\n.fun li uni-navigator{\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\twidth: 150rpx;\n\theight: 130rpx;\n\tdisplay: flex;\n\t-webkit-box-orient: vertical;\n\t-webkit-box-direction: normal;\n\t-webkit-flex-direction: column;\n\t        flex-direction: column;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n\t-webkit-justify-content: space-around;\n\t        justify-content: space-around;\n}\n.fun li uni-image{\n\twidth: 70rpx;\n\theight: 70rpx;\n}\n.fun li p{\n\tfont-size: 25rpx;\n}\n.tt1{\n\tmargin-top: 10rpx;\n}\n.line{\n\twidth: 90%;\n\theight: 0;\n\tborder: 1rpx solid #EFEFEF;\n\tmargin: 30rpx auto;\n}\n.tt{\n\twidth: 100%;\n\theight: 1000rpx;\n\tbackground-color: #FFFFFF;\n\tcolor: #3F3F3F;\n\tfont-size: 32rpx;\n\tfont-weight: bold;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-orient: vertical;\n\t-webkit-box-direction: normal;\n\t-webkit-flex-direction: column;\n\t        flex-direction: column;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n}\n.tt li{\n\tlist-style: none;\n\twidth: 90%;\n\theight: 100rpx;\n\tbackground-color: #007AFF;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n\tbackground: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") right center no-repeat;\n\tbackground-size: 5%;\n}\n.tt li uni-image{\n\twidth: 40rpx;\n\theight: 40rpx;\n\tmargin: auto 20rpx;\n}\n", ""]);
+exports.push([module.i, "\n.body{\n\twidth:100%;\n\tbackground-color: #F5F5F5;\n\tfont-family: \"等线\";\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-orient: vertical;\n\t-webkit-box-direction: normal;\n\t-webkit-flex-direction: column;\n\t        flex-direction: column;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n}\n.top{\n\twidth: 100%;\n\theight: 300rpx;\n\tbackground-color: #37C2BB;\n\tfont-weight: 100;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-align: end;\n\t-webkit-align-items: flex-end;\n\t        align-items: flex-end;\n\t-webkit-justify-content: space-around;\n\t        justify-content: space-around;\n}\n.name{\n\twidth:500rpx;\n\theight: 200rpx;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-orient: vertical;\n\t-webkit-box-direction: normal;\n\t-webkit-flex-direction: column;\n\t        flex-direction: column;\n\t-webkit-box-pack: end;\n\t-webkit-justify-content: flex-end;\n\t        justify-content: flex-end;\n}\n.top h1{\n\tfont-weight: 100;\n\tcolor: #FBFFFF;\n\tline-height: 20rpx;\n}\n.top p{\n\tcolor: #E5FAFA;\n\tfont-size: 30rpx;\n\tline-height: 90rpx;\n}\n.touxiang{\n\twidth: auto;\n\theight: 200rpx;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-pack: center;\n\t-webkit-justify-content: center;\n\t        justify-content: center;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n}\n.touxiang uni-image {\n\twidth: 162rpx;\n\theight: 162rpx;\n\t-webkit-border-radius: 81rpx;\n\t        border-radius: 81rpx;\n}\n.fun{\n\twidth: 100%;\n\theight: 200rpx;\n\tbackground-color: #FFFFFF;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n\t-webkit-justify-content: space-around;\n\t        justify-content: space-around;\n}\n.fun li{\n\tlist-style: none;\n\twidth: 150rpx;\n\theight: 130rpx;\n}\n.fun li uni-navigator{\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\twidth: 150rpx;\n\theight: 130rpx;\n\tdisplay: flex;\n\t-webkit-box-orient: vertical;\n\t-webkit-box-direction: normal;\n\t-webkit-flex-direction: column;\n\t        flex-direction: column;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n\t-webkit-justify-content: space-around;\n\t        justify-content: space-around;\n}\n.fun li uni-image{\n\twidth: 70rpx;\n\theight: 70rpx;\n}\n.fun li p{\n\tfont-size: 25rpx;\n}\n.tt1{\n\tmargin-top: 10rpx;\n}\n.line{\n\twidth: 90%;\n\theight: 0;\n\tborder: 1rpx solid #EFEFEF;\n\tmargin: 30rpx auto;\n}\n.tt{\n\twidth: 100%;\n\tbackground-color: #FFFFFF;\n\tcolor: #3F3F3F;\n\tfont-size: 32rpx;\n\tfont-weight: bold;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-orient: vertical;\n\t-webkit-box-direction: normal;\n\t-webkit-flex-direction: column;\n\t        flex-direction: column;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n}\n.tt li{\n\tlist-style: none;\n\twidth: 90%;\n\theight: 100rpx;\n\tbackground-color: #007AFF;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n\tbackground: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") right center no-repeat;\n\tbackground-size: 5%;\n}\n.tt li uni-image{\n\twidth: 40rpx;\n\theight: 40rpx;\n\tmargin: auto 20rpx;\n}\n.footer{\n\twidth: 100%;\n\t-webkit-box-flex: 1;\n\t-webkit-flex-grow: 1;\n\t        flex-grow: 1;\n\tbackground-color: #FFFFFF;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-pack: center;\n\t-webkit-justify-content: center;\n\t        justify-content: center;\n\tbackground-color: #000000;\n}\n.btn-quit{\n\tposition: absolute;\n\tbottom: 30rpx;\n\twidth: 90%;\n\theight: 80rpx;\n\tbackground-color: #F7F7F7;\n\tborder: none;\n\tcolor: #797979;\n\tfont-size: 25rpx;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-pack: center;\n\t-webkit-justify-content: center;\n\t        justify-content: center;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n}\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -4868,8 +4883,7 @@ var render = function() {
                   })
                 }),
                 1
-              ),
-              _vm._v(_vm._$g(2, "t1-0"))
+              )
             ],
             1
           ),

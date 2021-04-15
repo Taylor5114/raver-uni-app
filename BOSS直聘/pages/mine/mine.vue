@@ -2,11 +2,11 @@
 	<view class="body">
 		<view class="top">
 			<view class="name">
-				<h1>無限進步</h1>
+				<h1>{{user.name}}</h1>
 				<p>Infinite Progress</p>
 			</view>
 			<view class="touxiang">
-				<image src="../../static/raver/marshmello.png" mode=""></image>
+				<image :src="user.headPortrait" mode=""></image>
 			</view>
 		</view>
 		<view class="fun">
@@ -62,6 +62,9 @@
 				<p>意见反馈</p>
 			</li>
 		</view>
+		<view class="footer">
+			<button class="btn-quit" type="default">退出登录</button>
+		</view>
 	</view>
 </template>
 
@@ -75,15 +78,19 @@
 		},
 		data() {
 			return {
-				str:'增加',
-				x: 1,
-			
+				height:0,
+				width:0,
+				user:{
+					name:'Taylor Swift',
+					gender:'女',
+					headPortrait:'../../static/raver/taylor.jpeg',
+					birthTime:'1989-12-13',
+					entryTime:'2006-04-20',
+					isStudent:false	
+				}
 			}
 		},
-		methods: {                                                 
-			click(){
-				this.x++;
-			}
+		methods: { 
 		
 		}
 	}
@@ -92,9 +99,11 @@
 <style>
 	.body{
 		width:100%;
-		height: 1430rpx;
 		background-color: #F5F5F5;
 		font-family: "等线";
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 	.top{
 		width: 100%;
@@ -130,8 +139,9 @@
 		align-items: center;
 	}
 	.touxiang image {
-		width: 160rpx;
-		height: 160rpx;
+		width: 162rpx;
+		height: 162rpx;
+		border-radius: 81rpx;
 	}
 	.fun{
 		width: 100%;
@@ -173,7 +183,6 @@
 	}
 	.tt{
 		width: 100%;
-		height: 1000rpx;
 		background-color: #FFFFFF;
 		color: #3F3F3F;
 		font-size: 32rpx;
@@ -196,5 +205,26 @@
 		width: 40rpx;
 		height: 40rpx;
 		margin: auto 20rpx;
+	}
+	.footer{
+		width: 100%;
+		flex-grow: 1;
+		background-color: #FFFFFF;
+		display: flex;
+		justify-content: center;
+		background-color: #000000;
+	}
+	.btn-quit{
+		position: absolute;
+		bottom: 30rpx;
+		width: 90%;
+		height: 80rpx;
+		background-color: #F7F7F7;
+		border: none;
+		color: #797979;
+		font-size: 25rpx;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 </style>
