@@ -52,84 +52,84 @@
 				navlist:['消息','看过我','新职位','对我感兴趣'],
 				job:[
 					{position:'运维工程师',pay:'3-6K·13薪',company:'广联云志',num:'0-20人',condition:['1年以内','大专','音视频 技术支持 调试'],
-					img:'../../static/1x1img/1.jpg',name:'张彩云 经理',address:'张店区 尚美第三城',state:'未融资'},
+					img:'/static/1x1img/1.jpg',name:'张彩云 经理',address:'张店区 尚美第三城',state:'未融资'},
 					
-					{position:'Web前端开发工程师',pay:'7-10K·13薪',company:'北京锐安科技',num:'1000-9999人',condition:['在校/应届','本科','前端开发','HTML','CSS'],img:'../../static/1x1img/2.jpg',name:'于志欣 部门经理',address:'北京',state:'未融资'},
+					{position:'Web前端开发工程师',pay:'7-10K·13薪',company:'北京锐安科技',num:'1000-9999人',condition:['在校/应届','本科','前端开发','HTML','CSS'],img:'/static/1x1img/2.jpg',name:'于志欣 部门经理',address:'北京',state:'未融资'},
 					
-					{position:'运维工程师',pay:'3-6K·13薪',company:'广联云志',num:'0-20人',condition:['1年以内','大专','音视频 技术支持 调试'],img:'../../static/1x1img/4.jpg',name:'张彩云 经理',address:'张店区 尚美第三城',state:'未融资'},
+					{position:'运维工程师',pay:'3-6K·13薪',company:'广联云志',num:'0-20人',condition:['1年以内','大专','音视频 技术支持 调试'],img:'/static/1x1img/4.jpg',name:'张彩云 经理',address:'张店区 尚美第三城',state:'未融资'},
 					
 					{position:'运维工程师',pay:'3-6K·13薪',company:'广联云志',num:'0-20人',condition:['1年以内','大专','音视频 技术支持 调试'],
-					img:'../../static/1x1img/5.jpg',name:'张彩云 经理',address:'张店区 尚美第三城',state:'未融资'},
+					img:'/static/1x1img/5.jpg',name:'张彩云 经理',address:'张店区 尚美第三城',state:'未融资'},
 					{position:'运维工程师',pay:'3-6K·13薪',company:'广联云志',num:'0-20人',condition:['1年以内','大专','音视频 技术支持 调试'],
-					img:'../../static/1x1img/6.jpg',name:'张彩云 经理',address:'张店区 尚美第三城',state:'未融资'},
+					img:'/static/1x1img/6.jpg',name:'张彩云 经理',address:'张店区 尚美第三城',state:'未融资'},
 					{position:'运维工程师',pay:'3-6K·13薪',company:'广联云志',num:'0-20人',condition:['1年以内','大专','音视频 技术支持 调试'],
-					img:'../../static/1x1img/7.jpg',name:'张彩云 经理',address:'张店区 尚美第三城',state:'未融资'},
+					img:'/static/1x1img/7.jpg',name:'张彩云 经理',address:'张店区 尚美第三城',state:'未融资'},
 					{position:'运维工程师',pay:'3-6K·13薪',company:'广联云志',num:'0-20人',condition:['1年以内','大专','音视频 技术支持 调试'],
-					img:'../../static/1x1img/8.jpg',name:'张彩云 经理',address:'张店区 尚美第三城',state:'未融资'},
+					img:'/static/1x1img/8.jpg',name:'张彩云 经理',address:'张店区 尚美第三城',state:'未融资'},
 					{position:'运维工程师',pay:'3-6K·13薪',company:'广联云志',num:'0-20人',condition:['1年以内','大专','音视频 技术支持 调试'],
-					img:'../../static/1x1img/9.jpg',name:'张彩云 经理',address:'张店区 尚美第三城',state:'未融资'},
+					img:'/static/1x1img/9.jpg',name:'张彩云 经理',address:'张店区 尚美第三城',state:'未融资'},
 					{position:'运维工程师',pay:'3-6K·13薪',company:'广联云志',num:'0-20人',condition:['1年以内','大专','音视频 技术支持 调试'],
-					img:'../../static/1x1img/10.jpg',name:'张彩云 经理',address:'张店区 尚美第三城',state:'未融资'},
+					img:'/static/1x1img/.jpg',name:'张彩云 经理',address:'张店区 尚美第三城',state:'未融资'},
 				],
 				msage:[
 					{
-						head:'../../static/1x1img/1.jpg',
+						head:'/static/1x1img/1.jpg',
 						name:'宋阳阳',
 						position:'东道智能·HR',
 						date:'昨天',
 						msg:'等考虑工作的时候 可以优先考虑我们公司'
 					},
 					{
-						head:'../../static/1x1img/1.jpg',
+						head:'/static/1x1img/1.jpg',
 						name:'宋阳阳',
 						position:'东道智能·HR',
 						date:'昨天',
 						msg:'等考虑工作的时候 可以优先考虑我们公司'
 					},
 					{
-						head:'../../static/1x1img/1.jpg',
+						head:'/static/1x1img/1.jpg',
 						name:'宋阳阳',
 						position:'东道智能·HR',
 						date:'昨天',
 						msg:'等考虑工作的时候 可以优先考虑我们公司'
 					},
 					{
-						head:'../../static/1x1img/1.jpg',
+						head:'/static/1x1img/1.jpg',
 						name:'宋阳阳',
 						position:'东道智能·HR',
 						date:'昨天',
 						msg:'等考虑工作的时候 可以优先考虑我们公司'
 					},
 					{
-						head:'../../static/1x1img/1.jpg',
+						head:'/static/1x1img/1.jpg',
 						name:'宋阳阳',
 						position:'东道智能·HR',
 						date:'昨天',
 						msg:'等考虑工作的时候 可以优先考虑我们公司'
 					},
 					{
-						head:'../../static/1x1img/1.jpg',
+						head:'/static/1x1img/1.jpg',
 						name:'宋阳阳',
 						position:'东道智能·HR',
 						date:'昨天',
 						msg:'等考虑工作的时候 可以优先考虑我们公司'
 					},
 					{
-						head:'../../static/1x1img/1.jpg',
+						head:'/static/1x1img/1.jpg',
 						name:'宋阳阳',
 						position:'东道智能·HR',
 						date:'昨天',
 						msg:'等考虑工作的时候 可以优先考虑我们公司'
 					},
 					{
-						head:'../../static/1x1img/1.jpg',
+						head:'/static/1x1img/1.jpg',
 						name:'宋阳阳',
 						position:'东道智能·HR',
 						date:'昨天',
 						msg:'等考虑工作的时候 可以优先考虑我们公司'
 					},
 					{
-						head:'../../static/1x1img/1.jpg',
+						head:'/static/1x1img/1.jpg',
 						name:'宋阳阳',
 						position:'东道智能·HR',
 						date:'昨天',
@@ -147,7 +147,7 @@
 				console.log("msg+1")
 				this.msage.push(
 					{
-						head:'../../static/1x1img/1.jpg',
+						head:'/static/1x1img/1.jpg',
 						name:'宋yue',
 						position:'东道智能·HR',
 						date:'昨天',
@@ -159,7 +159,7 @@
 				console.log("job+1")
 				this.job.push(
 					{position:'运维工程师',pay:'3-6K·13薪',company:'广联云志',num:'0-20人',condition:['1年以内','大专','音视频 技术支持 调试'],
-					img:'../../static/1x1img/11.jpg',name:'张彩云 经理',address:'张店区 尚美第三城',state:'未融资'}
+					img:'/static/1x1img/11.jpg',name:'张彩云 经理',address:'张店区 尚美第三城',state:'未融资'}
 				);
 			}
 		},

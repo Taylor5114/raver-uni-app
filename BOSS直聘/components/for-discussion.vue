@@ -81,6 +81,8 @@
 		height: auto;  //修改
 		background-color: #F5F5F5;
 		overflow-y: auto;
+		font-size: 26rpx;
+		color: #979797;
 	}
 	.title view{
 		width: 100%;
@@ -88,10 +90,12 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		font-size: 26rpx;
+		
 	}
 	.changebg{
 		background-color: #FFFFFF;
+		font-size: 28rpx;
+		color: #000000;
 	}
 	.content{
 		width:87%; 

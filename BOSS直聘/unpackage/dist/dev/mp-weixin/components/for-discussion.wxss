@@ -19,6 +19,8 @@
 	height: auto;  /*修改 */
 	background-color: #F5F5F5;
 	overflow-y: auto;
+	font-size: 26rpx;
+	color: #979797;
 }
 .title view{
 	width: 100%;
@@ -32,10 +34,11 @@
 	-webkit-box-align: center;
 	-webkit-align-items: center;
 	        align-items: center;
-	font-size: 26rpx;
 }
 .changebg{
 	background-color: #FFFFFF;
+	font-size: 28rpx;
+	color: #000000;
 }
 .content{
 	width:87%; 

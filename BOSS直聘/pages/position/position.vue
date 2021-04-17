@@ -27,11 +27,11 @@
 		data() {
 			return {
 				navs:[
-					{title:'薪酬查询',img:'../../static/image/chaxun.png'},
-					{title:'职业评测',img:'../../static/image/pingce.png'},
-					{title:'热门问答',img:'../../static/image/wenda.png'},
-					{title:'求值攻略',img:'../../static/image/gonglue.png'},
-					{title:'直播招聘',img:'../../static/image/zhibo.png'},
+					{title:'薪酬查询',img:'/static/image/chaxun.png'},
+					{title:'职业评测',img:'/static/image/pingce.png'},
+					{title:'热门问答',img:'/static/image/wenda.png'},
+					{title:'求值攻略',img:'/static/image/gonglue.png'},
+					{title:'直播招聘',img:'/static/image/zhibo.png'},
 				],
 				nape:[
 					{title:'推荐',
@@ -54,8 +54,8 @@
 					{title:'学生',
 						content:[{cont:'专属推荐',isShow:true,
 							imgcard:[
-								{title:'在线求助',imgUrl:'../../static/raver/bg01.png'},
-								{title:'实时热议',imgUrl:'../../static/raver/bg02.png'},
+								{title:'在线求助',imgUrl:'/static/raver/bg01.png'},
+								{title:'实时热议',imgUrl:'/static/raver/bg02.png'},
 							],
 					}]},
 					{title:'人事/财务/行政',

@@ -193,35 +193,35 @@ __webpack_require__.r(__webpack_exports__);
       height: 0,
       topheight: 0,
       navs: [
-      { title: '附近工作', img: '../../static/image/fujin.png' },
-      { title: '找兼职', img: '../../static/image/jianzhi.png' },
-      { title: '最新发布', img: '../../static/image/fabu.png' },
-      { title: '找实习', img: '../../static/image/shixi.png' },
-      { title: '职位分类', img: '../../static/image/fenlei.png' },
-      { title: '热门公司', img: '../../static/image/gongsi.png' },
-      { title: '查工资', img: '../../static/image/gongzi.png' },
-      { title: '高薪优选', img: '../../static/image/shoucang00.png' }],
+      { title: '附近工作', img: '/static/image/fujin.png' },
+      { title: '找兼职', img: '/static/image/jianzhi.png' },
+      { title: '最新发布', img: '/static/image/fabu.png' },
+      { title: '找实习', img: '/static/image/shixi.png' },
+      { title: '职位分类', img: '/static/image/fenlei.png' },
+      { title: '热门公司', img: '/static/image/gongsi.png' },
+      { title: '查工资', img: '/static/image/gongzi.png' },
+      { title: '高薪优选', img: '/static/image/shoucang00.png' }],
 
       job: [
       { position: '运维工程师', pay: '3-6K·13薪', company: '广联云志', num: '0-20人', condition: ['1年以内', '大专', '音视频 技术支持 调试'],
-        img: '../../static/1x1img/1.jpg', name: '张彩云 经理', address: '张店区 尚美第三城', state: '未融资' },
+        img: '/static/1x1img/1.jpg', name: '张彩云 经理', address: '张店区 尚美第三城', state: '未融资' },
 
-      { position: 'Web前端开发工程师', pay: '7-10K·13薪', company: '北京锐安科技', num: '1000-9999人', condition: ['在校/应届', '本科', '前端开发', 'HTML', 'CSS'], img: '../../static/1x1img/2.jpg', name: '于志欣 部门经理', address: '北京', state: '未融资' },
+      { position: 'Web前端开发工程师', pay: '7-10K·13薪', company: '北京锐安科技', num: '1000-9999人', condition: ['在校/应届', '本科', '前端开发', 'HTML', 'CSS'], img: '/static/1x1img/2.jpg', name: '于志欣 部门经理', address: '北京', state: '未融资' },
 
-      { position: '运维工程师', pay: '3-6K·13薪', company: '广联云志', num: '0-20人', condition: ['1年以内', '大专', '音视频 技术支持 调试'], img: '../../static/1x1img/4.jpg', name: '张彩云 经理', address: '张店区 尚美第三城', state: '未融资' },
+      { position: '运维工程师', pay: '3-6K·13薪', company: '广联云志', num: '0-20人', condition: ['1年以内', '大专', '音视频 技术支持 调试'], img: '/static/1x1img/4.jpg', name: '张彩云 经理', address: '张店区 尚美第三城', state: '未融资' },
 
       { position: '运维工程师', pay: '3-6K·13薪', company: '广联云志', num: '0-20人', condition: ['1年以内', '大专', '音视频 技术支持 调试'],
-        img: '../../static/1x1img/5.jpg', name: '张彩云 经理', address: '张店区 尚美第三城', state: '未融资' },
+        img: '/static/1x1img/5.jpg', name: '张彩云 经理', address: '张店区 尚美第三城', state: '未融资' },
       { position: '运维工程师', pay: '3-6K·13薪', company: '广联云志', num: '0-20人', condition: ['1年以内', '大专', '音视频 技术支持 调试'],
-        img: '../../static/1x1img/6.jpg', name: '张彩云 经理', address: '张店区 尚美第三城', state: '未融资' },
+        img: '/static/1x1img/6.jpg', name: '张彩云 经理', address: '张店区 尚美第三城', state: '未融资' },
       { position: '运维工程师', pay: '3-6K·13薪', company: '广联云志', num: '0-20人', condition: ['1年以内', '大专', '音视频 技术支持 调试'],
-        img: '../../static/1x1img/7.jpg', name: '张彩云 经理', address: '张店区 尚美第三城', state: '未融资' },
+        img: '/static/1x1img/7.jpg', name: '张彩云 经理', address: '张店区 尚美第三城', state: '未融资' },
       { position: '运维工程师', pay: '3-6K·13薪', company: '广联云志', num: '0-20人', condition: ['1年以内', '大专', '音视频 技术支持 调试'],
-        img: '../../static/1x1img/8.jpg', name: '张彩云 经理', address: '张店区 尚美第三城', state: '未融资' },
+        img: '/static/1x1img/8.jpg', name: '张彩云 经理', address: '张店区 尚美第三城', state: '未融资' },
       { position: '运维工程师', pay: '3-6K·13薪', company: '广联云志', num: '0-20人', condition: ['1年以内', '大专', '音视频 技术支持 调试'],
-        img: '../../static/1x1img/9.jpg', name: '张彩云 经理', address: '张店区 尚美第三城', state: '未融资' },
+        img: '/static/1x1img/9.jpg', name: '张彩云 经理', address: '张店区 尚美第三城', state: '未融资' },
       { position: '运维工程师', pay: '3-6K·13薪', company: '广联云志', num: '0-20人', condition: ['1年以内', '大专', '音视频 技术支持 调试'],
-        img: '../../static/1x1img/.jpg', name: '张彩云 经理', address: '张店区 尚美第三城', state: '未融资' }] };
+        img: '/static/1x1img/.jpg', name: '张彩云 经理', address: '张店区 尚美第三城', state: '未融资' }] };
 
 
   },
@@ -230,7 +230,7 @@ __webpack_require__.r(__webpack_exports__);
       console.log("job+1");
       this.job.push(
       { position: '运维工程师++', pay: '3-6K·13薪', company: '广联云志', num: '0-20人', condition: ['1年以内', '大专', '音视频 技术支持 调试'],
-        img: '../../static/1x1img/11.jpg', name: '张彩云 经理', address: '张店区 尚美第三城', state: '未融资' });
+        img: '/static/1x1img/11.jpg', name: '张彩云 经理', address: '张店区 尚美第三城', state: '未融资' });
 
     } },
 
