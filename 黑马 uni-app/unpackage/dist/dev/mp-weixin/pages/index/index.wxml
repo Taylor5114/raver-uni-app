@@ -1,0 +1,1 @@
+<view class="content"><navigator url="../text/text">text</navigator><navigator url="../view/view">view</navigator><navigator url="../button/button">button</navigator><navigator url="../image/image">image</navigator><navigator url="../style/style">style</navigator></view>

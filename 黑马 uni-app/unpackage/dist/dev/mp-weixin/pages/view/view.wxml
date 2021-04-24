@@ -1,0 +1,1 @@
+<view><view class="box01" hover-class="box01-active" hover-stay-time="3000"><view class="box00" hover-class="box00-active" hover-start-time="1000" hover-stop-propagation="true"></view></view></view>

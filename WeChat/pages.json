@@ -1,0 +1,115 @@
+{	
+	"easycom": {
+	        "^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "微信",
+				"enablePullDownRefresh": true
+			}
+		}
+	    ,{
+            "path" : "pages/address-book/address-book",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/found/found",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/mine/mine",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/msage/msage",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/mine/card/card",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "卡包",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/mine/card/schoolcard/schoolcard",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "校园卡",
+                "enablePullDownRefresh": false
+            }
+            
+        },
+		{
+		    "path" : "pages/mallMenu/index2",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "tt",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "微信",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar":{
+		"color" : "#787878",
+		"selectedColor" : "#7FD6A7",
+		"borderStyle" : "black",
+		"backgroundColor" : "#F7F7F7",
+		"list" : [
+		    {
+		        "pagePath" : "pages/index/index",
+		        "iconPath" : "static/tabbar/msage.png",
+		        "selectedIconPath" : "static/tabbar/msage-active.png",
+		        "text" : "微信"
+		    },
+			{
+			    "pagePath" : "pages/address-book/address-book",
+			    "iconPath" : "static/tabbar/addressbook.png",
+			    "selectedIconPath" : "static/tabbar/addressbook-active.png",
+			    "text" : "通讯录"
+			},
+			{
+			    "pagePath" : "pages/found/found",
+			    "iconPath" : "static/tabbar/found.png",
+			    "selectedIconPath" : "static/tabbar/found-active.png",
+			    "text" : "发现"
+			},
+			{
+			    "pagePath" : "pages/mine/mine",
+			    "iconPath" : "static/tabbar/mine.png",
+			    "selectedIconPath" : "static/tabbar/mine-active.png",
+			    "text" : "我的"
+			}
+		]
+	}
+}

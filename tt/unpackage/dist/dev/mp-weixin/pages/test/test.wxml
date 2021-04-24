@@ -1,0 +1,1 @@
+<view><view class="charts-box"><qiun-data-charts vue-id="f4372d00-1" type="radar" chartData="{{chartData}}" background="none" animation="{{false}}" bind:__l="__l"></qiun-data-charts></view></view>

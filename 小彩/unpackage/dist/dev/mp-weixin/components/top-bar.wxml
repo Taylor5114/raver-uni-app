@@ -1,0 +1,1 @@
+<view class="topbar"><text class="title">{{title}}</text><view class="more"><image src="/static/topbar/search.png" mode></image><image src="/static/topbar/add.png" mode></image></view></view>

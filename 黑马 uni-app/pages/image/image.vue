@@ -1,0 +1,43 @@
+<template>
+	<view class="content">
+		<image src="../../static/Taylor.jpg"show-menu-by-longpress='true' mode="scaleToFill"></image>
+		<text>拉伸填充</text>
+		<image src="../../static/Taylor.jpg" mode="aspectFill"></image>
+		<text>保持比例 使短边能够完全显示</text>
+		<image src="../../static/Taylor.jpg" mode="aspectFit"></image>
+		<text>保持比例 使长边能够完全显示(完整显示)</text>
+		<image src="../../static/Taylor.jpg" mode="widthFix"></image>
+		<text>宽度不变，高度自动变化，保持原图宽高比不变</text>
+		<image src="../../static/Taylor.jpg" mode="heightFix"></image>
+		<text>高度不变，宽度自动变化，保持原图宽高比不变</text>
+		<image src="../../static/Taylor.jpg" mode="top"></image>
+		<text>不缩放图片，只显示图片的顶部区域</text>
+		<image src="../../static/Taylor.jpg" mode="bottom right"></image>
+		<text>不缩放图片，只显示图片的底部右边区域</text>
+	</view>
+</template>
+
+<script>
+	export default {
+		data() {
+			return {
+				
+			}
+		},
+		methods: {
+			
+		}
+	}
+</script>
+
+<style>
+	image{
+		border: 1px solid #eb433b;
+		margin: 30rpx;
+	}
+	.content{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+</style>

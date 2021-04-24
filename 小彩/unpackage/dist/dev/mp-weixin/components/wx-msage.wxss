@@ -1,0 +1,61 @@
+
+.msage{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	width: 750rpx;
+	height: 130rpx;
+}
+.charthead{
+	width: 130rpx;
+	height: 130rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.msg{
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	        flex-grow: 1;
+	border-bottom: 1rpx solid #F6F6F6;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+.charthead image{
+	width: 100rpx;
+	height: 100rpx;
+	-webkit-border-radius: 15rpx;
+	        border-radius: 15rpx;
+}
+.line01{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.time{
+	margin-right: 20rpx;
+	font-size: 25rpx;
+	color: #C4C4C4;
+}
+._msg{
+	font-size: 28rpx;
+	color: #C4C4C4;
+}
+

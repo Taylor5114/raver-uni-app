@@ -1,0 +1,8 @@
+
+.content{
+	background-color: #FFFFFF;
+}
+.topBar{
+	height: 40px;
+}
+

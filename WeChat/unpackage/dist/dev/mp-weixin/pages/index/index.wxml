@@ -1,0 +1,1 @@
+<view class="content" style="{{'height:'+(height+'px')+';'}}"><top-bar class="topBar" vue-id="8dd740cc-1" title="微信" bind:__l="__l"></top-bar><view class="main" style="{{'height:'+(height-40+'px')+';'}}"><weixin-msage vue-id="8dd740cc-2" msage="{{msage}}" bind:__l="__l"></weixin-msage><navigator url="/pages/mallMenu/index2">菜单</navigator></view></view>
