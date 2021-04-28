@@ -2,9 +2,6 @@
 	<view class="content">
 		<sticky :list="indexData.slideshow" :offsetTop='offsetTop' :enable="enable"></sticky>
 		
-		<view class="" v-for="(item,index) in indexData">
-			{{item.name}}
-		</view>
 		
 	</view>
 </template>

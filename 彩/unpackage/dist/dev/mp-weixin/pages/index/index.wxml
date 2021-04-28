@@ -1,1 +1,1 @@
-<view class="content"><sticky vue-id="8dd740cc-1" list="{{indexData.slideshow}}" offsetTop="{{offsetTop}}" enable="{{enable}}" bind:__l="__l"></sticky><block wx:for="{{indexData}}" wx:for-item="item" wx:for-index="index"><view>{{''+item.name+''}}</view></block></view>
+<view class="content"><sticky vue-id="8dd740cc-1" list="{{indexData.slideshow}}" offsetTop="{{offsetTop}}" enable="{{enable}}" bind:__l="__l"></sticky></view>
