@@ -1,7 +1,7 @@
 <template>
 	<view class="u-demo">
 		<view class="u-demo-wrap">
-			<uviewSwiper></uviewSwiper>
+			<uviewSwiper :list="list"></uviewSwiper>
 			<view class="u-demo-area">
 				<u-toast ref="uToast"></u-toast>
 				<u-sticky :offset-top="offsetTop" :enable="enable">
@@ -28,6 +28,7 @@
 		props:{
 			offsetTop: Number,
 			enable: Boolean,
+			list: Array
 		},
 		data() {
 			return {

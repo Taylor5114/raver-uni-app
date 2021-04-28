@@ -169,7 +169,8 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
   props: {
     offsetTop: Number,
-    enable: Boolean },
+    enable: Boolean,
+    list: Array },
 
   data: function data() {
     return {};

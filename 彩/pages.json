@@ -45,29 +45,29 @@
 		"backgroundColor": "#F8F8F8"
 	},
 	"tabBar": {
-	    "color": "#7A7E83",
-	    "selectedColor": "#3cc51f",
+	    "color": "#ff6b81",
+	    "selectedColor": "#ff4757",
 	    "borderStyle": "black",
 	    "backgroundColor": "#ffffff",
 	    "list": [{
 	        "pagePath": "pages/index/index",
-	        "iconPath": "",
-	        "selectedIconPath": "",
+	        "iconPath": "/static/tabbar/index.png",
+	        "selectedIconPath": "/static/tabbar/index-active.png",
 	        "text": "主页"
 	    }, {
 	        "pagePath": "pages/found/found",
-	        "iconPath": "",
-	        "selectedIconPath": "",
+	        "iconPath": "/static/tabbar/found.png",
+	        "selectedIconPath": "/static/tabbar/found-active.png",
 	        "text": "发现"
 	    }, {
 	        "pagePath": "pages/community/community",
-	        "iconPath": "",
-	        "selectedIconPath": "",
+	        "iconPath": "/static/tabbar/community.png",
+	        "selectedIconPath": "/static/tabbar/community-active.png",
 	        "text": "社区"
 	    }, {
 	        "pagePath": "pages/mine/mine",
-	        "iconPath": "",
-	        "selectedIconPath": "",
+	        "iconPath": "/static/tabbar/user.png",
+	        "selectedIconPath": "/static/tabbar/user-active.png",
 	        "text": "我的"
 	    }]
 	}

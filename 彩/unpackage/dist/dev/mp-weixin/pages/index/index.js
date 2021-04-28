@@ -128,7 +128,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var uviewSwiper = function uviewSwiper() {__webpack_require__.e(/*! require.ensure | components/swiper/index */ "components/swiper/index").then((function () {return resolve(__webpack_require__(/*! ../../components/swiper/index.vue */ 64));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var sticky = function sticky() {__webpack_require__.e(/*! require.ensure | components/sticky/index */ "components/sticky/index").then((function () {return resolve(__webpack_require__(/*! ../../components/sticky/index.vue */ 71));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
 
 
 
@@ -137,16 +137,21 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
-{
-  components: {
-    uviewSwiper: uviewSwiper,
-    sticky: sticky },
 
-  data: function data() {
-    return {
-      offsetTop: 0,
-      enable: true };
 
+
+var _indexData = _interopRequireDefault(__webpack_require__(/*! @/common/data/index.data.js */ 137));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var sticky = function sticky() {__webpack_require__.e(/*! require.ensure | components/sticky/index */ "components/sticky/index").then((function () {return resolve(__webpack_require__(/*! @/components/sticky/index.vue */ 71));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { sticky: sticky }, data: function data() {return { indexData: _indexData.default, offsetTop: 0, enable: true };
   },
   onLoad: function onLoad() {
 

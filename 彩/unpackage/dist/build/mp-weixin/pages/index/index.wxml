@@ -1,0 +1,1 @@
+<view class="content"><sticky vue-id="8dd740cc-1" offsetTop="{{offsetTop}}" enable="{{enable}}" bind:__l="__l"></sticky></view>
