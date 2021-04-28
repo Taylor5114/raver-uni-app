@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "u-toast": "/uview-ui/components/u-toast/u-toast",
+    "u-sticky": "/uview-ui/components/u-sticky/u-sticky",
+    "uview-tabs": "/components/tabs/index"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "uni-app",
+  "usingComponents": {
+    "uview-swiper": "/components/swiper/index",
+    "sticky": "/components/sticky/index"
+  }
+}

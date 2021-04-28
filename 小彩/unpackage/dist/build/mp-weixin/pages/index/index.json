@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "微信",
-  "enablePullDownRefresh": true,
-  "usingComponents": {
-    "top-bar": "/components/top-bar",
-    "weixin-msage": "/components/wx-msage"
-  }
-}
