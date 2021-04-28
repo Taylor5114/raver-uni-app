@@ -1,6 +1,7 @@
 <template>
 	<view class="u-demo">
 		<view class="u-demo-wrap">
+			<uviewSwiper></uviewSwiper>
 			<view class="u-demo-area">
 				<u-toast ref="uToast"></u-toast>
 				<u-sticky :offset-top="offsetTop" :enable="enable">
@@ -17,9 +18,11 @@
 </template>
 
 <script>
+	import uviewSwiper from '../swiper/index.vue'
 	import uviewTabs from '../tabs/index.vue'
 	export default {
 		components:{
+			uviewSwiper,
 			uviewTabs
 		},
 		props:{
@@ -53,7 +56,7 @@
 		margin-bottom: 140rpx;
 	}
 	.sticky {
-		background-color: $u-type-primary;
+		// background-color: $u-type-primary;
 		color: #fff;
 		margin: auto;
 		font-size: 28rpx;

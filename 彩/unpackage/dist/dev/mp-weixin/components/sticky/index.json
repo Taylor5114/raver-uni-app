@@ -3,6 +3,7 @@
   "usingComponents": {
     "u-toast": "/uview-ui/components/u-toast/u-toast",
     "u-sticky": "/uview-ui/components/u-sticky/u-sticky",
+    "uview-swiper": "/components/swiper/index",
     "uview-tabs": "/components/tabs/index"
   }
 }

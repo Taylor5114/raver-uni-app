@@ -1,8 +1,6 @@
 <template>
 	<view class="content">
-		<uviewSwiper></uviewSwiper>
-		<sticky :offsetTop='offsetTop' :enable="enable">
-		</sticky>
+		<sticky :offsetTop='offsetTop' :enable="enable"></sticky>
 	</view>
 </template>
 
@@ -30,9 +28,5 @@
 </script>
 
 <style>
-	.tt{
-		width: 750rpx;
-		height: 200rpx;
-		background-color: #007AFF;
-	}
+	
 </style>

@@ -1,1 +1,1 @@
-<view class="content"><uview-swiper vue-id="8dd740cc-1" bind:__l="__l"></uview-swiper><sticky vue-id="8dd740cc-2" offsetTop="{{offsetTop}}" enable="{{enable}}" bind:__l="__l"></sticky></view>
+<view class="content"><sticky vue-id="8dd740cc-1" offsetTop="{{offsetTop}}" enable="{{enable}}" bind:__l="__l"></sticky></view>
