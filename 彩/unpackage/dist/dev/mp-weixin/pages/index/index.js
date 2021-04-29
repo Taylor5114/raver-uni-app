@@ -137,7 +137,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
-var _indexData = _interopRequireDefault(__webpack_require__(/*! @/common/data/index.data.js */ 137));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //
+var _indexData = _interopRequireDefault(__webpack_require__(/*! @/common/data/index.data.js */ 46));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //
 //
 //
 //
@@ -145,7 +145,7 @@ var _indexData = _interopRequireDefault(__webpack_require__(/*! @/common/data/in
 //
 //
 //
-var sticky = function sticky() {__webpack_require__.e(/*! require.ensure | components/sticky/index */ "components/sticky/index").then((function () {return resolve(__webpack_require__(/*! @/components/sticky/index.vue */ 71));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { sticky: sticky }, data: function data() {return { indexData: _indexData.default,
+var sticky = function sticky() {__webpack_require__.e(/*! require.ensure | components/sticky/index */ "components/sticky/index").then((function () {return resolve(__webpack_require__(/*! @/components/sticky/index.vue */ 65));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { sticky: sticky }, data: function data() {return { indexData: _indexData.default,
       offsetTop: 0,
       enable: true };
 
