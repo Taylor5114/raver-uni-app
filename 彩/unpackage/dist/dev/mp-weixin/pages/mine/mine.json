@@ -1,5 +1,9 @@
 {
   "navigationBarTitleText": "",
   "enablePullDownRefresh": false,
-  "usingComponents": {}
+  "usingComponents": {
+    "uview-avatar": "/components/avatar/index",
+    "vip-card": "/components/vip-card",
+    "mine-list": "/components/mine-list"
+  }
 }

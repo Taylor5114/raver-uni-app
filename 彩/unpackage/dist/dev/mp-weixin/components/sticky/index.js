@@ -80,10 +80,10 @@ var components
 try {
   components = {
     uToast: function() {
-      return __webpack_require__.e(/*! import() | uview-ui/components/u-toast/u-toast */ "uview-ui/components/u-toast/u-toast").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-toast/u-toast.vue */ 72))
+      return __webpack_require__.e(/*! import() | uview-ui/components/u-toast/u-toast */ "uview-ui/components/u-toast/u-toast").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-toast/u-toast.vue */ 77))
     },
     uSticky: function() {
-      return __webpack_require__.e(/*! import() | uview-ui/components/u-sticky/u-sticky */ "uview-ui/components/u-sticky/u-sticky").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-sticky/u-sticky.vue */ 79))
+      return __webpack_require__.e(/*! import() | uview-ui/components/u-sticky/u-sticky */ "uview-ui/components/u-sticky/u-sticky").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-sticky/u-sticky.vue */ 84))
     }
   }
 } catch (e) {
@@ -140,7 +140,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var uviewSwiper = function uviewSwiper() {__webpack_require__.e(/*! require.ensure | components/swiper/index */ "components/swiper/index").then((function () {return resolve(__webpack_require__(/*! ../swiper/index.vue */ 86));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var uviewTabs = function uviewTabs() {__webpack_require__.e(/*! require.ensure | components/tabs/index */ "components/tabs/index").then((function () {return resolve(__webpack_require__(/*! ../tabs/index.vue */ 93));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var uviewSwiper = function uviewSwiper() {__webpack_require__.e(/*! require.ensure | components/swiper/index */ "components/swiper/index").then((function () {return resolve(__webpack_require__(/*! ../swiper/index.vue */ 91));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var uviewTabs = function uviewTabs() {__webpack_require__.e(/*! require.ensure | components/tabs/index */ "components/tabs/index").then((function () {return resolve(__webpack_require__(/*! ../tabs/index.vue */ 98));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 

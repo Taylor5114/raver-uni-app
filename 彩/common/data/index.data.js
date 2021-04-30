@@ -1,4 +1,5 @@
 export default {
+	// 首页轮播图
 	slideshow:[
 		{
 			image: 'https://cdn.uviewui.com/uview/swiper/1.jpg',
