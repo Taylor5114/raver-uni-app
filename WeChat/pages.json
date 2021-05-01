@@ -8,6 +8,7 @@
 			"style": {
 				"navigationBarTitleText": "微信",
 				"enablePullDownRefresh": true
+				// "navigationStyle":"custom"
 			}
 		}
 	    ,{
@@ -24,7 +25,26 @@
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+                "enablePullDownRefresh": false,
+				"app-plus":{
+					"titleNView":{
+						"buttons":[
+							{
+								"text":"T",
+								"type":"back",
+								"float":"left"
+							},
+							{
+								"text":"S",
+								"type":"menu"
+							}
+						],
+						"searchInput":{
+							"disabled":true,
+							"borderRadius":"30rpx"
+						}
+					}
+				}
             }
             
         }
@@ -73,11 +93,20 @@
 		    }
 		    
 		}
+        ,{
+            "path" : "pages/test/test",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "微信",
-		"navigationBarBackgroundColor": "#FFFFFF",
+		"navigationBarBackgroundColor": "#007AFF",
 		"backgroundColor": "#FFFFFF"
 	},
 	"tabBar":{
@@ -110,6 +139,11 @@
 			    "selectedIconPath" : "static/tabbar/mine-active.png",
 			    "text" : "我的"
 			}
-		]
+		],
+		"midButton":{
+			"iconPath" : "static/issue.png",
+			"text":"发布"
+			
+		}
 	}
 }

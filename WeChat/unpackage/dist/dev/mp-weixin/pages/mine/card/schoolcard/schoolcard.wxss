@@ -27,16 +27,14 @@
 .sdqg image{
 	width: 90%;
 	height: 400rpx;
-	-webkit-border-radius: 20rpx;
-	        border-radius: 20rpx;
+	border-radius: 20rpx;
 }
 .btn{
 	width: 280rpx;
 	height: 80rpx;
 	border: 1px solid #67A5C5;
 	color: #67A5C5;
-	-webkit-border-radius: 6rpx;
-	        border-radius: 6rpx;
+	border-radius: 6rpx;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: flex;

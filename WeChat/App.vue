@@ -8,6 +8,11 @@
 		},
 		onHide: function() {
 			console.log('App Hide')
+		},
+		onLoad() {
+			uni.onTabBarMidButtonTap((e)=>{
+			
+			})
 		}
 	}
 </script>

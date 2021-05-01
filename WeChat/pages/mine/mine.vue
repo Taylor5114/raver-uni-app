@@ -98,16 +98,18 @@
 	}
 	.user{
 		width: 100%;
-		height: 250rpx;
+		height: 320rpx;
 		background-color: #FFFFFF;
 		display: flex;
 		justify-content: center;
-		align-items: center;
+		position: relative;
 	}
 	._user{
 		width: 90%;
 		height: 200rpx;
 		display: flex;
+		position: absolute;
+		bottom: 20rpx;
 	}
 	.charthead{
 		width: 160rpx;

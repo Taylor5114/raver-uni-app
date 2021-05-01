@@ -5,4 +5,23 @@
 .topBar{
 	height: 40px;
 }
+.ttlist{
+	/* height: 1000rpx; */
+	width: 750rpx;
+}
+.tt{
+	width: 750rpx;
+	height: 400rpx;
+	border: 1rpx solid #007AFF;
+	background-color: #808080;
+}
+.tt image{
+	width: 300rpx;
+	height: 100rpx;
+}
+.load{
+	width: 750rpx;
+	height: 50rpx;
+	background-color: #18B566;
+}
 

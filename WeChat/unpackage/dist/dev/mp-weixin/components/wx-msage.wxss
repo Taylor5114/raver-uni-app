@@ -38,8 +38,7 @@
 .charthead image{
 	width: 100rpx;
 	height: 100rpx;
-	-webkit-border-radius: 15rpx;
-	        border-radius: 15rpx;
+	border-radius: 15rpx;
 }
 .line01{
 	display: -webkit-box;

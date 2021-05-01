@@ -7,13 +7,14 @@
     "pages/index/msage/msage",
     "pages/mine/card/card",
     "pages/mine/card/schoolcard/schoolcard",
-    "pages/mallMenu/index2"
+    "pages/mallMenu/index2",
+    "pages/test/test"
   ],
   "subPackages": [],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "微信",
-    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarBackgroundColor": "#007AFF",
     "backgroundColor": "#FFFFFF"
   },
   "tabBar": {

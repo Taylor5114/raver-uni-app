@@ -49,8 +49,7 @@
 }
 .u-search-inner.data-v-bc46e79a {
   background-color: #eaeaea;
-  -webkit-border-radius: 100rpx;
-          border-radius: 100rpx;
+  border-radius: 100rpx;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -71,8 +70,7 @@
 .u-tab-item.data-v-bc46e79a {
   height: 110rpx;
   background: #f6f6f6;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -115,8 +113,7 @@
   margin-bottom: 30rpx;
   background-color: #fff;
   padding: 16rpx;
-  -webkit-border-radius: 8rpx;
-          border-radius: 8rpx;
+  border-radius: 8rpx;
 }
 .class-item.data-v-bc46e79a:last-child {
   min-height: 100vh;
