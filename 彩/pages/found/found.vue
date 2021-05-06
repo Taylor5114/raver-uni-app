@@ -1,6 +1,8 @@
 <template>
 	<view>
-		found
+		<div class="box box1">box1</div>
+		<div class="box box2">box2</div>
+		<div class="box box3">box3</div>
 	</view>
 </template>
 
@@ -18,5 +20,29 @@
 </script>
 
 <style>
-
+	.box {
+	  position: -webkit-sticky;
+	  position: sticky;
+	  width: 100%;
+	  height: 30px;
+	  text-align: center;
+	  color: #fff;
+	  margin-bottom: 50px;
+	}
+	
+	.box1 {
+	  top: 0;
+	  z-index: 1;
+	  background: #007bff;
+	}
+	
+	.box2 {
+	  top: 30px;
+	  z-index: 1;
+	  background: #ffc107;
+	}
+	
+	.box3 {
+	  background: #f4516c;
+	}
 </style>

@@ -33,30 +33,12 @@
 
 <script>
 	export default {
+		props:{
+			list: Array
+		},
 		data() {
 			return {
-				// list: [],
-				list: [{
-					name: '关注',
-					// count: 100
-				}, {
-					name:  '推荐',
-					// count: 7
-				}, {
-					name: '电影'
-				},{
-					name: '电视剧'
-				},{
-					name: '小视频'
-				}, {
-					name:  '游戏'
-				}, {
-					name: '校园'
-				},{
-					name: '影视'
-				},{
-					name: '音乐'
-				}],
+				list: [],
 				current: 0,
 				sectionCurrent: 0,
 				isScroll: true,
@@ -64,7 +46,8 @@
 				activeColor: this.$u.color['error'],
 				bold: true,
 				control: true,
-				offset: [5, -5]
+				offset: [5, -5],
+			
 			}
 		},
 		onLoad() {

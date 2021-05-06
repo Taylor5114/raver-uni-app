@@ -1,1 +1,5 @@
-<view class="content"><sticky vue-id="8dd740cc-1" list="{{indexData.slideshow}}" offsetTop="{{offsetTop}}" enable="{{enable}}" bind:__l="__l"></sticky></view>
+<view class="content"><sticky vue-id="8dd740cc-1" indexData="{{indexData}}" offsetTop="{{offsetTop}}" enable="{{enable}}" bind:__l="__l">
+  <text style="position:relative;">文本内容...</text>
+
+  <button type="primary">按钮主操作</button>
+</sticky></view>

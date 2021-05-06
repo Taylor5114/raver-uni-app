@@ -1,1 +1,1 @@
-<view>found</view>
+<view><view class="box box1 _div">box1</view><view class="box box2 _div">box2</view><view class="box box3 _div">box3</view></view>

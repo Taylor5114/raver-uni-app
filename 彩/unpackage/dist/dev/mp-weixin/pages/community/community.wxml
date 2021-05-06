@@ -1,1 +1,1 @@
-<view>community</view>
+<view><scroll-view class="s" scroll-y="true" data-event-opts="{{[['scrolltolower',[['a',['$event']]]]]}}" bindscrolltolower="__e"><block wx:for="{{list}}" wx:for-item="item" wx:for-index="index" wx:key="index"><block><view class="item">{{item.title}}</view></block></block><view class="load">加载中....</view></scroll-view></view>

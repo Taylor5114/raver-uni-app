@@ -128,7 +128,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var sticky = function sticky() {__webpack_require__.e(/*! require.ensure | components/sticky/index */ "components/sticky/index").then((function () {return resolve(__webpack_require__(/*! @/components/sticky/index.vue */ 71));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
@@ -137,23 +137,31 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
-var _indexData = _interopRequireDefault(__webpack_require__(/*! @/common/data/index.data.js */ 46));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //
-//
-//
-//
-//
-//
-//
-//
-var sticky = function sticky() {__webpack_require__.e(/*! require.ensure | components/sticky/index */ "components/sticky/index").then((function () {return resolve(__webpack_require__(/*! @/components/sticky/index.vue */ 65));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { sticky: sticky }, data: function data() {return { indexData: _indexData.default,
+
+
+{
+  components: {
+    sticky: sticky },
+
+  data: function data() {
+    return {
+      indexData: {},
       offsetTop: 0,
       enable: true };
 
+
   },
-  onLoad: function onLoad() {
+  onLoad: function onLoad() {var _this = this;
+    uni.request({
+      url: "https://mock.mengxuegu.com/mock/608f846e1d10f86a7bd6adad/tay/index_data",
+      success: function success(res) {
+        _this.indexData = res.data;
+        console.log(_this.indexData);
+      } });
 
   },
   methods: {} };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ })
 

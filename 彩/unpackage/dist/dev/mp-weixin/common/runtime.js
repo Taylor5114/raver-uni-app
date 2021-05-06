@@ -105,7 +105,7 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"components/sticky/index":1,"components/vip-card":1,"components/swiper/index":1,"components/tabs/index":1,"uview-ui/components/u-sticky/u-sticky":1,"uview-ui/components/u-toast/u-toast":1,"uview-ui/components/u-avatar/u-avatar":1,"uview-ui/components/u-subsection/u-subsection":1,"uview-ui/components/u-swiper/u-swiper":1,"uview-ui/components/u-tabs/u-tabs":1,"uview-ui/components/u-icon/u-icon":1,"uview-ui/components/u-badge/u-badge":1};
+/******/ 		var cssChunks = {"components/sticky/index":1,"components/mine-list":1,"components/vip-card":1,"components/swiper/index":1,"components/tabs/index":1,"uview-ui/components/u-sticky/u-sticky":1,"uview-ui/components/u-toast/u-toast":1,"uview-ui/components/u-avatar/u-avatar":1,"uview-ui/components/u-subsection/u-subsection":1,"uview-ui/components/u-swiper/u-swiper":1,"uview-ui/components/u-tabs/u-tabs":1,"uview-ui/components/u-icon/u-icon":1,"uview-ui/components/u-badge/u-badge":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {

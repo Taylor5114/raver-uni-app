@@ -1,0 +1,1 @@
+<view class="content" style="{{'height:'+(height+'px')+';'}}"><vip-card vue-id="bae1c640-1" bind:__l="__l"></vip-card></view>

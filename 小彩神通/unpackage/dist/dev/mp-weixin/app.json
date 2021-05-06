@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/classify/classify",
+    "pages/found/found",
+    "pages/mine/mine"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#FFFFFF"
+  },
+  "tabBar": {
+    "color": "#ff4757",
+    "selectedColor": "#ff6b81",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "static/image/tabbar/home.png",
+        "selectedIconPath": "static/image/tabbar/homex.png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "iconPath": "static/image/tabbar/classify.png",
+        "selectedIconPath": "static/image/tabbar/classifyx.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/found/found",
+        "iconPath": "static/image/tabbar/found.png",
+        "selectedIconPath": "static/image/tabbar/foundx.png",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "static/image/tabbar/mine.png",
+        "selectedIconPath": "static/image/tabbar/minex.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

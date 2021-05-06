@@ -1,12 +1,12 @@
 <template>
 	<view class="u-demo">
 		<view class="u-demo-wrap">
-			<uviewSwiper :list="list"></uviewSwiper>
+			<uviewSwiper :list='indexData.slideshow'></uviewSwiper>
 			<view class="u-demo-area">
 				<u-toast ref="uToast"></u-toast>
 				<u-sticky :offset-top="offsetTop" :enable="enable">
 					<view class="sticky">
-						<uviewTabs></uviewTabs>
+						<uviewTabs :list='indexData.nav_list'></uviewTabs>
 					</view>
 				</u-sticky>
 			</view>
@@ -28,7 +28,7 @@
 		props:{
 			offsetTop: Number,
 			enable: Boolean,
-			list: Array
+			indexData: Object
 		},
 		data() {
 			return {

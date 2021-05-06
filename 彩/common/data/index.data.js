@@ -13,5 +13,6 @@ export default {
 			image: 'https://cdn.uviewui.com/uview/swiper/3.jpg',
 			title: '谁念西风独自凉，萧萧黄叶闭疏窗，沉思往事立残阳'
 		}
-	]
+	],
+	
 }

@@ -63,7 +63,7 @@
 	        "pagePath": "pages/community/community",
 	        "iconPath": "/static/tabbar/community.png",
 	        "selectedIconPath": "/static/tabbar/community-active.png",
-	        "text": "社区"
+	        "text": "分类"
 	    }, {
 	        "pagePath": "pages/mine/mine",
 	        "iconPath": "/static/tabbar/user.png",

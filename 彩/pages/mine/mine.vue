@@ -15,7 +15,7 @@
 			</view>
 		</view>
 		<vipCard></vipCard>
-		<mineList :list='mineList'></mineList>
+		<mineList :list='mineData.mineList'></mineList>
 	</view>
 </template>
 
@@ -28,15 +28,26 @@
 		components:{
 			uviewAvatar,
 			vipCard,
-			mineList
+			mineList,
+			
 		},																																																											
 		data() { 
 			return {
-				mineList: mineData.mineList
+				mineList: mineData.mineList,
+				mineData: Object
 			}
 		},
 		methods: {
 			
+		},
+		onLoad() {
+			uni.request({
+				url:'https://mock.mengxuegu.com/mock/608f846e1d10f86a7bd6adad/tay/mine_data',
+				success: (res) => {
+					this.mineData = res.data;
+				}
+				
+			})
 		}
 	}
 </script>
