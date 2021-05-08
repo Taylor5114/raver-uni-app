@@ -2,6 +2,7 @@
   "navigationBarTitleText": "分类",
   "enablePullDownRefresh": false,
   "usingComponents": {
-    "nav-bar": "/components/nav-bar/nav-bar"
+    "nav-bar": "/components/nav-bar/nav-bar",
+    "upload-img": "/components/upload-image/upload-image"
   }
 }

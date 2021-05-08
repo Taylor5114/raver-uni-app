@@ -29,14 +29,14 @@
 					this.height = res.windowHeight;
 					this.width = res.windowWidth;
 					this.statusBar = res.statusBarHeight;
-					console.log(this.statusBar)
+					// console.log(this.statusBar)
 				}
 			}),
 			uni.request({
 				url:'https://mock.mengxuegu.com/mock/6093ccdb1d10f86a7bd6b305/lottery/home',
 				success: (res) => {
 					this.homeData = res.data;
-					console.log(this.homeData)
+					// console.log(this.homeData)
 				}
 			})
 		}

@@ -139,78 +139,26 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
-
-
-
-
-
-
 {
   components: {
     navBar: navBar },
 
   data: function data() {
     return {
-      height: Number,
-      width: Number,
-      statusBar: Number,
-      img: [] };
+      height: 0,
+      width: 0,
+      statusBar: 0 };
 
   },
-  methods: {
-    tt: function tt() {var _this = this;
-      uni.chooseImage({
-        count: 6, //默认9
-        sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有
-        sourceType: ['album'], //从相册选择
-        success: function success(res) {
-          // console.log(res.tempFilePaths),
-          console.log(res);
-          _this.img = _this.img.concat(res.tempFilePaths);
+  methods: {},
 
-        },
-        fail: function fail() {
-          console.log('tt()_error');
-        },
-        complete: function complete() {
-          console.log("tt()_has been called");
-        } });
 
-    },
-    yulan: function yulan(index) {
-      console.log(index),
-      uni.previewImage({
-        current: index,
-        urls: this.img });
-
-    },
-    del: function del(id) {
-      this.img.splice(id, 1);
-      // 使用@tap.stop="方法" 或者 方法里使用 e.stopPropagation();
-    },
-    showTips: function showTips(id) {var _this2 = this;
-      uni.showModal({
-        title: '提示',
-        content: '确定要删除这张图片吗？',
-        success: function success(res) {
-          if (res.confirm) {
-            console.log('用户点击确定');
-            _this2.del(id);
-          } else if (res.cancel) {
-            console.log('用户点击取消');
-          }
-        } });
-
-    } },
-
-  onLoad: function onLoad() {var _this3 = this;
+  onLoad: function onLoad() {var _this = this;
     uni.getSystemInfo({
       success: function success(res) {
-        _this3.height = res.windowHeight;
-        _this3.width = res.windowWidth;
-        _this3.statusBar = res.statusBarHeight;
+        _this.height = res.windowHeight;
+        _this.width = res.windowWidth;
+        _this.statusBar = res.statusBarHeight;
       } });
 
   } };exports.default = _default;

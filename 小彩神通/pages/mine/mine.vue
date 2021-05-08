@@ -1,7 +1,12 @@
 <template>
 	<view class="content" :style="{height:height+'px'}">
 		<!-- <navBar :top="statusBar"></navBar> -->
-		<vipCard></vipCard>
+		<!-- <vipCard></vipCard> -->
+		<button type="default" @click="test()">Tt</button>
+		<template v-if="src">
+			<video :src="src" controls v-if="isTrue"></video>
+		</template>
+		
 	</view>
 </template>
 
@@ -16,11 +21,30 @@
 			return {
 				height: Number,
 				width: Number,
-				statusBar: Number
+				statusBar: Number,
+				src:'',
+				
 			}
 		},
 		methods: {
-			
+			test() {
+				uni.chooseVideo({
+					count: 1,
+					sourceType: ['camera', 'album'],
+					success: (res) => {
+						this.isTrue = true;
+						this.src = res.tempFilePath;
+					}
+				});
+				// uni.chooseFile({
+				//   count: 6, //默认100
+				//   // extension:['.zip','.doc','mp4'],
+				//   type:'all',
+				//     success: function (res) {
+				//         console.log(JSON.stringify(res.tempFilePaths));
+				//     }
+				// });
+			}
 		},
 		onLoad() {
 			uni.getSystemInfo({
@@ -30,6 +54,7 @@
 					this.statusBar = res.statusBarHeight;
 				}
 			})
+			
 		}
 	}
 </script>

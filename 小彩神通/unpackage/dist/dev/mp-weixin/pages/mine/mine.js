@@ -128,7 +128,12 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var navBar = function navBar() {__webpack_require__.e(/*! require.ensure | components/nav-bar/nav-bar */ "components/nav-bar/nav-bar").then((function () {return resolve(__webpack_require__(/*! ../../components/nav-bar/nav-bar.vue */ 66));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var vipCard = function vipCard() {__webpack_require__.e(/*! require.ensure | components/vip-card/vip-card */ "components/vip-card/vip-card").then((function () {return resolve(__webpack_require__(/*! ../../components/vip-card/vip-card.vue */ 80));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var navBar = function navBar() {__webpack_require__.e(/*! require.ensure | components/nav-bar/nav-bar */ "components/nav-bar/nav-bar").then((function () {return resolve(__webpack_require__(/*! ../../components/nav-bar/nav-bar.vue */ 66));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var vipCard = function vipCard() {__webpack_require__.e(/*! require.ensure | components/vip-card/vip-card */ "components/vip-card/vip-card").then((function () {return resolve(__webpack_require__(/*! ../../components/vip-card/vip-card.vue */ 87));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
+
+
+
 
 
 
@@ -146,11 +151,30 @@ __webpack_require__.r(__webpack_exports__);
     return {
       height: Number,
       width: Number,
-      statusBar: Number };
+      statusBar: Number,
+      src: '' };
+
 
   },
-  methods: {},
+  methods: {
+    test: function test() {
+      // uni.chooseVideo({
+      // 	count: 1,
+      // 	sourceType: ['camera', 'album'],
+      // 	success: (res) => {
+      // 		this.isTrue = true;
+      // 		this.src = res.tempFilePath;
+      // 	}
+      // });
+      uni.chooseFile({
+        count: 6, //默认100
+        // extension:['.zip','.doc','mp4'],
+        type: 'all',
+        success: function success(res) {
+          console.log(JSON.stringify(res.tempFilePaths));
+        } });
 
+    } },
 
   onLoad: function onLoad() {var _this = this;
     uni.getSystemInfo({
@@ -159,6 +183,7 @@ __webpack_require__.r(__webpack_exports__);
         _this.width = res.windowWidth;
         _this.statusBar = res.statusBarHeight;
       } });
+
 
   } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))

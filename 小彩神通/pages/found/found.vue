@@ -1,15 +1,7 @@
 <template>
 	<view class="content" :style="{height:height+'px'}">
 		<!-- <navBar :top="statusBar"></navBar> -->
-		<view class="box">
-			<view v-for="(item,index) in img" class="_box">
-				<image class="tts" src="/static/image/del.png" mode="" @click="showTips(index)"></image>
-				<image class="_img" @click='yulan(index)' :src="item" mode="aspectFill"></image>
-			</view>
-			<view class="_box">
-				<view class="_img addimg" @click="tt()"></view>
-			</view>
-		</view>
+		
 	</view>
 </template>
 
@@ -21,57 +13,13 @@
 		},
 		data() {
 			return {
-				height: Number,
-				width: Number,
-				statusBar: Number,
-				img:[]
+				height: 0,
+				width: 0,
+				statusBar: 0,
 			}
 		},
 		methods: {
-			tt(){
-				uni.chooseImage({
-				    count: 6, //默认9
-				    sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有
-				    sourceType: ['album'], //从相册选择
-					success: (res)=>  {
-						// console.log(res.tempFilePaths),
-						console.log(res);
-						this.img = this.img.concat(res.tempFilePaths);
-
-					},
-					fail: () => {
-						console.log('tt()_error')
-					},
-					complete: () => {
-						console.log("tt()_has been called")
-					}
-				});
-			},
-			yulan(index){
-				console.log(index),
-				uni.previewImage({
-					current: index,
-					urls:this.img
-				});
-			},
-			del(id){
-				this.img.splice(id,1)
-				// 使用@tap.stop="方法" 或者 方法里使用 e.stopPropagation();
-			},
-			showTips(id){
-				uni.showModal({
-				    title: '提示',
-				    content: '确定要删除这张图片吗？',
-				    success: (res) => {
-				        if (res.confirm) {
-				            console.log('用户点击确定');
-							this.del(id);
-				        } else if (res.cancel) {
-				            console.log('用户点击取消');
-				        }
-				    }
-				});
-			}
+			
 		},
 		onLoad() {
 			uni.getSystemInfo({

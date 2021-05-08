@@ -159,14 +159,14 @@ __webpack_require__.r(__webpack_exports__);
         _this.height = res.windowHeight;
         _this.width = res.windowWidth;
         _this.statusBar = res.statusBarHeight;
-        console.log(_this.statusBar);
+        // console.log(this.statusBar)
       } }),
 
     uni.request({
       url: 'https://mock.mengxuegu.com/mock/6093ccdb1d10f86a7bd6b305/lottery/home',
       success: function success(res) {
         _this.homeData = res.data;
-        console.log(_this.homeData);
+        // console.log(this.homeData)
       } });
 
   } };exports.default = _default;
