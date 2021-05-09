@@ -31,7 +31,8 @@
 ._img{
 	width: 230rpx;
 	height: 230rpx;
-	border-radius: 10rpx;
+	-webkit-border-radius: 10rpx;
+	        border-radius: 10rpx;
 }
 .tts{
 	width: 16px;

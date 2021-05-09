@@ -6,16 +6,17 @@
 		<template v-if="src">
 			<video :src="src" controls v-if="isTrue"></video>
 		</template>
-		
+		<uploadHead></uploadHead>
 	</view>
 </template>
 
 <script>
 	import navBar from '../../components/nav-bar/nav-bar.vue'
 	import vipCard from '../../components/vip-card/vip-card.vue'
+	import uploadHead from '../../components/upload-head/upload-head.vue'
 	export default {
 		components:{
-			navBar,vipCard
+			navBar,vipCard,uploadHead
 		},
 		data() {
 			return {

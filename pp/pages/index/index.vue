@@ -1,24 +1,49 @@
 <template>
-	<view class="content">
-		<view class="tt">
-			<view class="_tt">
-				<text>紧急联系人：17560745114</text>
+	<view class="content" >
+	<ttSlide :list="ttData.slideshow"></ttSlide>
+	<!-- <image :src="url" mode=""></image> -->
+	<view class="nav">
+		<text v-for="(nav,index) in navList" @tap="change(index)" :class="{change:id==index}">{{nav}}</text>
+		<button class="btn" v-show="id==0" type="default" @tap="refresh()">刷新</button>
+	</view>
+	<swiper class="ttsw" duration=200 disable-touch='true' :current="id">
+		<swiper-item>
+			<view class="swiper-item">
+				<scroll-view scroll-y="true" class="scview">
+					<takeCode class='_scview' :takecode="ttData.takecode"></takeCode>
+				</scroll-view>
+				
 			</view>
-			
-		</view>
-		<view class="ss">
-			<image src="../../static/wx.png" mode=""></image>
-			<image src="../../static/zfb.png" mode=""></image>
-		</view>
+		</swiper-item>
+		<swiper-item>
+			<view class="swiper-item">
+				<QRcode></QRcode>
+				
+			</view>
+		</swiper-item>
+	</swiper>
+	
 	</view>
 </template>
 
 <script>
+	import takeCode from '../../components/take-code/take-code.vue'
+	import QRcode from '../../components/QR-code/QR-code.vue'
+	import ttSlide from '../../components/tt-slide/tt-slide.vue'
 	export default {
+		components:{
+			takeCode,
+			QRcode,
+			ttSlide
+		},
 		data() {
 			return {
 				height:0,
-				width:0
+				width:0,
+				ttData:'',
+				navList: ['取件','收款'],
+				id:0,
+				homeData:{}
 			}
 		},
 		onLoad() {
@@ -28,66 +53,93 @@
 					this.width = res.windowWidth;
 					console.log(this.height+' '+this.width)
 				}
-			}),
+			});
 			uni.request({
-			    url: 'https://mock.mengxuegu.com/mock/608bb11d1d10f86a7bd6aae6/raver233/wechat', //仅为示例，并非真实接口地址。
+			    url: 'https://mock.mengxuegu.com/mock/60912e6c1d10f86a7bd6af4e/tt/cainiao', 
 			    success: (res) => {
 			        console.log(res.data);
-			        this.text = 'request success';
+			        this.ttData = res.data;
 			    }
+			});
+			uni.request({
+				url:'https://mock.mengxuegu.com/mock/6093ccdb1d10f86a7bd6b305/lottery/home',
+				success: (res) => {
+					this.homeData = res.data;
+					// console.log(this.homeData)
+				}
 			});
 		},
 		methods: {
-
+			change(index){
+				this.id = index;
+			},
+			refresh(){
+				uni.request({
+				    url: 'https://mock.mengxuegu.com/mock/60912e6c1d10f86a7bd6af4e/tt/cainiao', 
+				    success: (res) => {
+				        console.log(res.data);
+				        this.ttData = res.data;
+						uni.showToast({
+							title: '刷新成功'
+						});
+				    }
+				});
+			}
 		}
 	}
 </script>
 
 <style>
 	.content {
-		width: 393px;
-		height: 708px;
-		/* background-color: #00ff6f; */
-		display: flex;
-		/* align-items: center; */
-		/* justify-content: space-around; */
-	}
-	.content image{
-		width: 380rpx;
-		height: 450rpx;
-		border-radius: 20rpx;
-		box-shadow: 5px 5px 5px #a4a2a6;
-		transform:rotate(90deg);
-	}
-	.tt{
-		width: 120px;
-		height: 703px;
-		/* background-color: #ff3191; */
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-	._tt{
-		width: 600px;
-		height: 100px;
-		/* background-color: #e4fb2a; */
-		transform:rotate(90deg);
-	}
-	._tt text{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		font-size: 24px;
-		/* color: #ff0000; */
-	}
-	.ss{
-		flex-grow: 1;
-		height: 703px;
-		width: 343px;
-		/* background-color: #007AFF; */
+		height: 753px;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		
+	}
+	.nav{
+		width: 750rpx;
+		height: 50px;
+		font-size: 25px;
+		display: flex;
 		align-items: center;
+	}
+	.nav text{
+		width: 150rpx;
+		height: 50px;
+		margin: 0 30rpx;
+		line-height: 50px;
+		transition:0.3s;
+	}
+	.change{
+		font-size: 35px;
+		line-height: 50px;
+		color: #F0AD4E;
+		transition:0.3s;
+	}
+	.nav button{
+		width: 100px;
+		height: 40px;
+		background-color:#F0AD4E;
+		color: #FFFFFF;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.swiper-item{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.ttsw{
+		height: 1000rpx;
+		flex-grow: 1;
+	}
+	.scview{
+		width: 750rpx;
+		height: 1050rpx;
+	}
+	._scview{
+		width: 750rpx;
+		height: 1100rpx;
 	}
 </style>

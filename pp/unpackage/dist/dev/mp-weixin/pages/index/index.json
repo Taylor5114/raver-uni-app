@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "TT_Family",
+  "usingComponents": {
+    "take-code": "/components/take-code/take-code",
+    "q-rcode": "/components/QR-code/QR-code",
+    "tt-slide": "/components/tt-slide/tt-slide"
+  }
+}

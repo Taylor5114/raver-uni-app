@@ -105,11 +105,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"components/nav-bar/nav-bar":1,"components/tt-slide/tt-slide":1,"components/upload-image/upload-image":1,"components/vip-card/vip-card":1};
+/******/ 		var cssChunks = {"components/nav-bar/nav-bar":1,"components/tt-slide/tt-slide":1,"components/upload-image/upload-image":1,"components/upload-head/upload-head":1,"components/vip-card/vip-card":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"components/nav-bar/nav-bar":"components/nav-bar/nav-bar","components/tt-slide/tt-slide":"components/tt-slide/tt-slide","components/upload-image/upload-image":"components/upload-image/upload-image","components/vip-card/vip-card":"components/vip-card/vip-card"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"components/nav-bar/nav-bar":"components/nav-bar/nav-bar","components/tt-slide/tt-slide":"components/tt-slide/tt-slide","components/upload-image/upload-image":"components/upload-image/upload-image","components/upload-head/upload-head":"components/upload-head/upload-head","components/vip-card/vip-card":"components/vip-card/vip-card"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {

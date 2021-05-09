@@ -1,0 +1,44 @@
+
+._box{
+	width: 200rpx;
+	height: 200rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	position: relative;
+}
+.tt{
+	width: 100rpx;
+}
+.addimg{
+	width: 100%;
+	height: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	background-color: #007AFF;
+	/* border-radius: 100rpx;
+	overflow: hidden; */
+}
+._addimg{
+	width: 100%;
+	height: 100%;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAA8ElEQVR4Xu2aMQ6DUAxD4bSd2yGHyNC9XJYK9Z/g66u28GNHCY6dxBH7Fv7s4d+/AQAMCEcACYQTgCaIBJBAOAJIIJwATAEkgATCEUACSgJ09/uKX1UvVR5SBnT3OQCQ5SELfH04AMAAJEAPoAn+xqCsGcsCMwUYg+wBLEK32gSHsXn+ydQcVfVYEWvZFIgHYKYat5IAAEwgAAOww9hh7DB2GDvMPYCDCBeh4JPYZ0yBJc5uYhnlB4lldngGfYd3AMChCsocYIASfYfYMMChCsocYIASfYfYMMChCsocYIASfYfYMMChCsocYIASfYfYXyv5ckEPHMbHAAAAAElFTkSuQmCC) center no-repeat /*微信小程序兼容 */
+}
+._addimg image{
+	width: 100%;
+	height: 100%;
+}
+

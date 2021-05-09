@@ -3,6 +3,7 @@
   "enablePullDownRefresh": false,
   "usingComponents": {
     "nav-bar": "/components/nav-bar/nav-bar",
-    "vip-card": "/components/vip-card/vip-card"
+    "vip-card": "/components/vip-card/vip-card",
+    "upload-head": "/components/upload-head/upload-head"
   }
 }

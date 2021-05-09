@@ -1,0 +1,53 @@
+
+.content {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+}
+.nav{
+	width: 750rpx;
+	height: 50px;
+	font-size: 25px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.nav text{
+	width: 150rpx;
+	height: 50px;
+	margin: 0 30rpx;
+	line-height: 50px;
+	-webkit-transition:0.3s;
+	transition:0.3s;
+}
+.change{
+	font-size: 35px;
+	line-height: 50px;
+	color: #F0AD4E;
+	-webkit-transition:0.3s;
+	transition:0.3s;
+}
+swiper{
+}
+.nav button{
+	width: 100px;
+	height: 40px;
+	background-color: #ced6e0;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+

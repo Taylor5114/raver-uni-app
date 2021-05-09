@@ -1,0 +1,1 @@
+<view class="content"><view class="box"><view class="_box"><view data-event-opts="{{[['tap',[['tt']]]]}}" class="addimg" bindtap="__e"><view class="_addimg"><image src="{{img}}" mode></image></view><view class="tt"><text>上传头像</text></view></view></view></view></view>
