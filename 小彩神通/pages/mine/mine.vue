@@ -2,7 +2,7 @@
 	<view class="content" :style="{height:height+'px'}">
 		<!-- <navBar :top="statusBar"></navBar> -->
 		<!-- <vipCard></vipCard> -->
-		<button type="default" @click="test()">Tt</button>
+		
 		<template v-if="src">
 			<video :src="src" controls v-if="isTrue"></video>
 		</template>
@@ -28,24 +28,7 @@
 			}
 		},
 		methods: {
-			test() {
-				uni.chooseVideo({
-					count: 1,
-					sourceType: ['camera', 'album'],
-					success: (res) => {
-						this.isTrue = true;
-						this.src = res.tempFilePath;
-					}
-				});
-				// uni.chooseFile({
-				//   count: 6, //默认100
-				//   // extension:['.zip','.doc','mp4'],
-				//   type:'all',
-				//     success: function (res) {
-				//         console.log(JSON.stringify(res.tempFilePaths));
-				//     }
-				// });
-			}
+			
 		},
 		onLoad() {
 			uni.getSystemInfo({

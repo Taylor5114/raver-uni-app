@@ -144,13 +144,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 var _default =
 {
   name: "upload-head",
@@ -161,7 +154,8 @@ var _default =
     return {
       img: '',
       count: 1,
-      num: 0 };
+      num: 0,
+      isshow: true };
 
   },
   methods: {
@@ -172,6 +166,7 @@ var _default =
         sourceType: ['album'], //从相册选择
         success: function success(res) {
           _this.img = res.tempFilePaths[0];
+          _this.isshow = false;
         },
         fail: function fail() {
           uni.showToast({
@@ -189,6 +184,23 @@ var _default =
         current: index,
         urls: this.img });
 
+    },
+    update: function update() {
+      console.log('!!!!!!!!!!!!!!!!!!!!1');
+      if (!this.isshow) {
+        var that = this;
+        uni.showModal({
+          title: '',
+          content: '重新选择头像',
+          success: function success(res) {
+            if (res.confirm) {
+              that.tt();
+            } else if (res.cancel) {
+
+            }
+          } });
+
+      }
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 

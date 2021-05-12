@@ -1,19 +1,12 @@
 <template>
 	<view class="content">
-		
 		<view class="box">
-<!-- 			<view v-for="(item,index) in img" class="_box">
-				<view class="tts" @click="showTips(index)">
-					<view class="_tts"></view>
-				</view>
-				<image class="_img" @click='yulan(index)' :src="item" mode="aspectFill"></image>
-			</view> -->
 			<view class="_box">
-				<view class="addimg" @click="tt()">
+				<view class="addimg" @click="update()">
 					<view class="_addimg">
 						<image :src="img" mode=""></image>
 					</view>
-					<view class="tt">
+					<view class="tt" @click="tt()" v-if="isshow">
 						<text>上传头像</text>
 					</view>
 				</view>
@@ -32,7 +25,8 @@
 			return {
 				img:'',
 				count:1,
-				num:0
+				num:0,
+				isshow: true
 			};
 		},
 		methods: {
@@ -43,6 +37,7 @@
 				    sourceType: ['album'], //从相册选择
 					success: (res) => {
 						this.img = res.tempFilePaths[0];	
+						this.isshow = false
 					},
 					fail: () => {
 						uni.showToast({
@@ -60,6 +55,23 @@
 					current: index,
 					urls:this.img
 				});
+			},
+			update(){
+				console.log('!!!!!!!!!!!!!!!!!!!!1')
+				if(!this.isshow){
+					var that = this;
+					uni.showModal({
+					    title: '',
+					    content: '重新选择头像',
+					    success: function (res) {
+					        if (res.confirm) {
+					            that.tt()
+					        } else if (res.cancel) {
+								
+					        }
+					    }
+					});
+				}
 			}
 		}
 	}
@@ -73,6 +85,8 @@
 		justify-content: center;
 		align-items: center;
 		position: relative;
+		border-radius: 100rpx;
+		overflow: hidden;
 	}
 	.tt{
 		width: 100rpx;
@@ -84,16 +98,24 @@
 		justify-content: center;
 		align-items: center;
 		background-color: #007AFF;
-		/* border-radius: 100rpx;
-		overflow: hidden; */
+		
 	}
 	._addimg{
 		width: 100%;
 		height: 100%;
-		background: url(/components/upload-image/image/add.png) center no-repeat //微信小程序兼容
+		background: url(/components/upload-image/image/add.png) center no-repeat; //微信小程序兼容
 	}
 	._addimg image{
 		width: 100%;
 		height: 100%;
+	}
+	.tt{
+		width: 100%;
+		height: 24px;
+		position: absolute;
+		bottom: 0;
+		background-color: #18B566;
+		display: flex;
+		justify-content: center;
 	}
 </style>

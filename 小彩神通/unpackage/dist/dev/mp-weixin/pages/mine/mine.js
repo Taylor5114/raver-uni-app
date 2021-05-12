@@ -157,32 +157,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
   },
-  methods: {
-    test: function test() {var _this = this;
-      uni.chooseVideo({
-        count: 1,
-        sourceType: ['camera', 'album'],
-        success: function success(res) {
-          _this.isTrue = true;
-          _this.src = res.tempFilePath;
-        } });
+  methods: {},
 
-      // uni.chooseFile({
-      //   count: 6, //默认100
-      //   // extension:['.zip','.doc','mp4'],
-      //   type:'all',
-      //     success: function (res) {
-      //         console.log(JSON.stringify(res.tempFilePaths));
-      //     }
-      // });
-    } },
 
-  onLoad: function onLoad() {var _this2 = this;
+  onLoad: function onLoad() {var _this = this;
     uni.getSystemInfo({
       success: function success(res) {
-        _this2.height = res.windowHeight;
-        _this2.width = res.windowWidth;
-        _this2.statusBar = res.statusBarHeight;
+        _this.height = res.windowHeight;
+        _this.width = res.windowWidth;
+        _this.statusBar = res.statusBarHeight;
       } });
 
 
