@@ -101,7 +101,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
   },
   onHide: function onHide() {
     console.log('App Hide');
-  } };exports.default = _default;
+  },
+  globalData: {
+    touxiang: '' } };exports.default = _default;
 
 /***/ }),
 /* 8 */

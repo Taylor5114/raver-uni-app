@@ -140,10 +140,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
-
-
 {
   components: {
     navBar: navBar, vipCard: vipCard, uploadHead: uploadHead },
@@ -155,10 +151,12 @@ __webpack_require__.r(__webpack_exports__);
       statusBar: Number,
       src: '' };
 
-
   },
-  methods: {},
-
+  methods: {
+    tt: function tt() {
+      getApp().globalData.text = 'success';
+      this.text = getApp().globalData.text;
+    } },
 
   onLoad: function onLoad() {var _this = this;
     uni.getSystemInfo({
@@ -167,7 +165,6 @@ __webpack_require__.r(__webpack_exports__);
         _this.width = res.windowWidth;
         _this.statusBar = res.statusBarHeight;
       } });
-
 
   } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))

@@ -1,17 +1,7 @@
 <template>
-	<view class="content">
-		<view class="box">
-			<view class="_box">
-				<view class="addimg" @click="update()">
-					<view class="_addimg">
-						<image :src="img" mode=""></image>
-					</view>
-					<view class="tt" @click="tt()" v-if="isshow">
-						<text>上传头像</text>
-					</view>
-				</view>
-			</view>
-		</view>
+	<view class="content" @click="update()">
+		<image :src="img" class="tt" mode="aspectFill" :class="{ttbg:isTrue}"></image>
+		<image src="@/components/upload-head/image/camera.png" class="_tt" mode="" v-if="isTrue"></image>
 	</view>
 </template>
 
@@ -26,7 +16,8 @@
 				img:'',
 				count:1,
 				num:0,
-				isshow: true
+				isTrue: true,
+				tips: '上传一张图片作为头像'
 			};
 		},
 		methods: {
@@ -37,7 +28,9 @@
 				    sourceType: ['album'], //从相册选择
 					success: (res) => {
 						this.img = res.tempFilePaths[0];	
-						this.isshow = false
+						this.isTrue = false;
+						this.tips = '重新选择头像',
+						getApp().globalData.touxiang = this.img
 					},
 					fail: () => {
 						uni.showToast({
@@ -57,12 +50,11 @@
 				});
 			},
 			update(){
-				console.log('!!!!!!!!!!!!!!!!!!!!1')
 				if(!this.isshow){
 					var that = this;
 					uni.showModal({
 					    title: '',
-					    content: '重新选择头像',
+					    content: that.tips,
 					    success: function (res) {
 					        if (res.confirm) {
 					            that.tt()
@@ -78,44 +70,24 @@
 </script>
 
 <style>
-	._box{
+	.content{
 		width: 200rpx;
 		height: 200rpx;
-		display: flex;
-		justify-content: center;
-		align-items: center;
 		position: relative;
-		border-radius: 100rpx;
-		overflow: hidden;
-	}
-	.tt{
-		width: 100rpx;
-	}
-	.addimg{
-		width: 100%;
-		height: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background-color: #007AFF;
-		
-	}
-	._addimg{
-		width: 100%;
-		height: 100%;
-		background: url(/components/upload-image/image/add.png) center no-repeat; //微信小程序兼容
-	}
-	._addimg image{
-		width: 100%;
-		height: 100%;
 	}
 	.tt{
 		width: 100%;
-		height: 24px;
-		position: absolute;
-		bottom: 0;
-		background-color: #18B566;
-		display: flex;
-		justify-content: center;
+		height: 100%;
+		border-radius: 50%;
+	}
+	._tt{
+		width: 120rpx;
+		height: 120rpx;
+		position: absolute; left: 50%; top: 50%;   
+		transform: translate(-50%, -50%);
+		z-index: 1;
+	}
+	.ttbg{
+		background: linear-gradient(to bottom, #8BDEDA, #43ADD0, #998EE0, #E17DC2, #EF9393);
 	}
 </style>

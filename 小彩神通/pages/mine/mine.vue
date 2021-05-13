@@ -2,10 +2,6 @@
 	<view class="content" :style="{height:height+'px'}">
 		<!-- <navBar :top="statusBar"></navBar> -->
 		<!-- <vipCard></vipCard> -->
-		
-		<template v-if="src">
-			<video :src="src" controls v-if="isTrue"></video>
-		</template>
 		<uploadHead></uploadHead>
 	</view>
 </template>
@@ -23,12 +19,14 @@
 				height: Number,
 				width: Number,
 				statusBar: Number,
-				src:'',
-				
+				src: '',
 			}
 		},
 		methods: {
-			
+			tt(){
+				getApp().globalData.text = 'success';
+				this.text = getApp().globalData.text;
+			}
 		},
 		onLoad() {
 			uni.getSystemInfo({
@@ -38,7 +36,6 @@
 					this.statusBar = res.statusBarHeight;
 				}
 			})
-			
 		}
 	}
 </script>

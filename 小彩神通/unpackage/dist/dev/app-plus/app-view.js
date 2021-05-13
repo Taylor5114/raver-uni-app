@@ -223,7 +223,12 @@ var render = function() {
   return _c(
     "v-uni-view",
     { staticClass: _vm._$g(0, "sc"), style: _vm._$g(0, "s"), attrs: { _i: 0 } },
-    [_c("ttSlide", { attrs: { _i: 1 } })],
+    [
+      _c("ttSlide", { attrs: { _i: 1 } }),
+      _c("v-uni-web-view", {
+        attrs: { src: "https://www.raver233.top/", _i: 2 }
+      })
+    ],
     1
   )
 }
@@ -1968,19 +1973,8 @@ var render = function() {
   return _c(
     "v-uni-view",
     { staticClass: _vm._$g(0, "sc"), style: _vm._$g(0, "s"), attrs: { _i: 0 } },
-    [
-      _vm._$g(1, "i")
-        ? [
-            _vm._$g(2, "i")
-              ? _c("v-uni-video", {
-                  attrs: { src: _vm._$g(2, "a-src"), controls: true, _i: 2 }
-                })
-              : _vm._e()
-          ]
-        : _vm._e(),
-      _c("uploadHead", { attrs: { _i: 3 } })
-    ],
-    2
+    [_c("uploadHead", { attrs: { _i: 1 } })],
+    1
   )
 }
 var recyclableRender = false
@@ -2331,67 +2325,31 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "v-uni-view",
-    { staticClass: _vm._$g(0, "sc"), attrs: { _i: 0 } },
+    {
+      staticClass: _vm._$g(0, "sc"),
+      attrs: { _i: 0 },
+      on: {
+        click: function($event) {
+          return _vm.$handleViewEvent($event)
+        }
+      }
+    },
     [
-      _c(
-        "v-uni-view",
-        { staticClass: _vm._$g(1, "sc"), attrs: { _i: 1 } },
-        [
-          _c(
-            "v-uni-view",
-            { staticClass: _vm._$g(2, "sc"), attrs: { _i: 2 } },
-            [
-              _c(
-                "v-uni-view",
-                {
-                  staticClass: _vm._$g(3, "sc"),
-                  attrs: { _i: 3 },
-                  on: {
-                    click: function($event) {
-                      return _vm.$handleViewEvent($event)
-                    }
-                  }
-                },
-                [
-                  _c(
-                    "v-uni-view",
-                    { staticClass: _vm._$g(4, "sc"), attrs: { _i: 4 } },
-                    [
-                      _c("v-uni-image", {
-                        attrs: { src: _vm._$g(5, "a-src"), mode: "", _i: 5 }
-                      })
-                    ],
-                    1
-                  ),
-                  _vm._$g(6, "i")
-                    ? _c(
-                        "v-uni-view",
-                        {
-                          staticClass: _vm._$g(6, "sc"),
-                          attrs: { _i: 6 },
-                          on: {
-                            click: function($event) {
-                              return _vm.$handleViewEvent($event)
-                            }
-                          }
-                        },
-                        [
-                          _c("v-uni-text", { attrs: { _i: 7 } }, [
-                            _vm._v("上传头像")
-                          ])
-                        ],
-                        1
-                      )
-                    : _vm._e()
-                ],
-                1
-              )
-            ],
-            1
-          )
-        ],
-        1
-      )
+      _c("v-uni-image", {
+        staticClass: _vm._$g(1, "sc"),
+        class: _vm._$g(1, "c"),
+        attrs: { src: _vm._$g(1, "a-src"), mode: "aspectFill", _i: 1 }
+      }),
+      _vm._$g(2, "i")
+        ? _c("v-uni-image", {
+            staticClass: _vm._$g(2, "sc"),
+            attrs: {
+              src: "/components/upload-head/image/camera.png",
+              mode: "",
+              _i: 2
+            }
+          })
+        : _vm._e()
     ],
     1
   )
@@ -2482,12 +2440,9 @@ if(false) {}
 
 // Imports
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../../../Applications/HBuilderX-3.1.9.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/css-loader/dist/runtime/api.js */ 15);
-var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../../../../../../../../Applications/HBuilderX-3.1.9.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/lib/app-plus/getUrl.js */ 40);
-var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! @/components/upload-image/image/add.png */ 41);
 exports = ___CSS_LOADER_API_IMPORT___(false);
-var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-exports.push([module.i, "\n._box[data-v-e68f0e44]{\n\twidth: 200rpx;\n\theight: 200rpx;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-pack: center;\n\t-webkit-justify-content: center;\n\t        justify-content: center;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n\tposition: relative;\n\t-webkit-border-radius: 100rpx;\n\t        border-radius: 100rpx;\n\toverflow: hidden;\n}\n.tt[data-v-e68f0e44]{\n\twidth: 100rpx;\n}\n.addimg[data-v-e68f0e44]{\n\twidth: 100%;\n\theight: 100%;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-pack: center;\n\t-webkit-justify-content: center;\n\t        justify-content: center;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n\tbackground-color: #007AFF;\n}\n._addimg[data-v-e68f0e44]{\n\twidth: 100%;\n\theight: 100%;\n\tbackground: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") center no-repeat; /*微信小程序兼容 */\n}\n._addimg uni-image[data-v-e68f0e44]{\n\twidth: 100%;\n\theight: 100%;\n}\n.tt[data-v-e68f0e44]{\n\twidth: 100%;\n\theight: 24px;\n\tposition: absolute;\n\tbottom: 0;\n\tbackground-color: #18B566;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-pack: center;\n\t-webkit-justify-content: center;\n\t        justify-content: center;\n}\n", ""]);
+exports.push([module.i, "\n.content[data-v-e68f0e44]{\n\twidth: 200rpx;\n\theight: 200rpx;\n\tposition: relative;\n}\n.tt[data-v-e68f0e44]{\n\twidth: 100%;\n\theight: 100%;\n\t-webkit-border-radius: 50%;\n\t        border-radius: 50%;\n}\n._tt[data-v-e68f0e44]{\n\twidth: 120rpx;\n\theight: 120rpx;\n\tposition: absolute; left: 50%; top: 50%;   \n\t-webkit-transform: translate(-50%, -50%);   \n\t        transform: translate(-50%, -50%);\n\tz-index: 1;\n}\n.ttbg[data-v-e68f0e44]{\n\tbackground: -webkit-gradient(linear, left top, left bottom, from(#8BDEDA), color-stop(#43ADD0), color-stop(#998EE0), color-stop(#E17DC2), to(#EF9393));\n\tbackground: -webkit-linear-gradient(top, #8BDEDA, #43ADD0, #998EE0, #E17DC2, #EF9393);\n\tbackground: linear-gradient(to bottom, #8BDEDA, #43ADD0, #998EE0, #E17DC2, #EF9393);\n}\n", ""]);
 // Exports
 module.exports = exports;
 

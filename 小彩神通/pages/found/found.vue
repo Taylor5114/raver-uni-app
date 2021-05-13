@@ -1,7 +1,6 @@
 <template>
 	<view class="content" :style="{height:height+'px'}">
 		<!-- <navBar :top="statusBar"></navBar> -->
-		
 	</view>
 </template>
 

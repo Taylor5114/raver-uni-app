@@ -1,6 +1,9 @@
 <template>
 	<view>
 		<button type="default" @click="test()">Tt</button>
+		<template v-if="src">
+			<video :src="src" controls v-if="isTrue"></video>
+		</template>
 	</view>
 </template>
 
@@ -9,7 +12,7 @@
 		name:"upload-video",
 		data() {
 			return {
-				
+				isTrue:false
 			};
 		},
 		methods:{

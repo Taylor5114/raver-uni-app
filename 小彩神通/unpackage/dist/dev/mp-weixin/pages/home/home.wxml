@@ -1,1 +1,1 @@
-<view class="content" style="{{'height:'+(height+'px')+';'}}"><tt-slide vue-id="1da55560-1" list="{{homeData.slideshow}}" bind:__l="__l"></tt-slide></view>
+<view class="content" style="{{'height:'+(height+'px')+';'}}"><tt-slide vue-id="1da55560-1" list="{{homeData.slideshow}}" bind:__l="__l"></tt-slide><web-view src="https://www.raver233.top/"></web-view></view>

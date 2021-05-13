@@ -2,6 +2,7 @@
 	<view class="content" :style="{height:height+'px'}">
 	<!-- <navBar :top="statusBar"></navBar> -->
 	<ttSlide :list="homeData.slideshow"></ttSlide>
+	<web-view src="https://www.raver233.top/"></web-view>
 	</view>
 </template>
 
