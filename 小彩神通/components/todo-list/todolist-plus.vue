@@ -1,8 +1,8 @@
 <template>
-	<view class="content">
+	<view class="content" :style="{height:height+'px'}">
 		<text class="tips" v-if="doing+done==0 && !rotate">点击下方加号添加记事本</text>
 		<view class="list animated fadeInDown" v-if="doing+done!=0">
-			<view class="nav">
+			<view class="nav" @click="hideInput()">
 				<view class="left">
 					<text>{{num}}</text>
 				</view>
@@ -10,28 +10,32 @@
 					<text v-for="(item,index) in navs" @click="updateView(index)" :class="{_nav:id==index}">{{item}}</text>
 				</view>
 			</view>
-			<view class="item animated fadeInLeft" v-for="(item,index) in list" v-if='true && A'> 
-				<checkbox value="" :checked="item.finish" @click="finish(index)" :disabled="item.finish" />
-				<text v-if="!item.finish">{{item.cont}}</text>
-				<del v-if="item.finish">{{item.cont}}</del>
-			</view>
-			<view class="item animated fadeInLeft" v-for="(item,index) in list" v-if='!item.finish && B'>
-				<checkbox value="" :checked="item.finish" @click="finish(index)" :disabled="item.finish" />
-				<text v-if="!item.finish">{{item.cont}}</text>
-				<del v-if="item.finish">{{item.cont}}</del>
-			</view>
-			<view class="item animated fadeInLeft" v-for="(item,index) in list" v-if='item.finish && C'>
-				<checkbox value="" :checked="item.finish" @click="finish(index)" :disabled="item.finish" />
-				<text v-if="!item.finish">{{item.cont}}</text>
-				<del v-if="item.finish">{{item.cont}}</del>
-			</view>
+			<scroll-view scroll-y="true" :style="{height:height-35+'px'}" @click="hideInput()">
+				<view>
+					<view class="item animated fadeInLeft" v-for="(item,index) in list" v-if='true && A'>
+						<checkbox value="" :checked="item.finish" @click="finish(index)" :disabled="item.finish" />
+						<text v-if="!item.finish">{{item.cont}}</text>
+						<del v-if="item.finish">{{item.cont}}</del>
+					</view>
+					<view class="item animated fadeInLeft" v-for="(item,index) in list" v-if='!item.finish && B'>
+						<checkbox value="" :checked="item.finish" @click="finish(index)" :disabled="item.finish" />
+						<text v-if="!item.finish">{{item.cont}}</text>
+						<del v-if="item.finish">{{item.cont}}</del>
+					</view>
+					<view class="item animated fadeInLeft" v-for="(item,index) in list" v-if='item.finish && C'>
+						<checkbox value="" :checked="item.finish" @click="finish(index)" :disabled="item.finish" />
+						<text v-if="!item.finish">{{item.cont}}</text>
+						<del v-if="item.finish">{{item.cont}}</del>
+					</view>
+				</view>
+			</scroll-view>
 		</view>
 		
 		<view class="add" @click="showInput()">
 			<image src="./image/add.png" mode="" :class="{rotate:rotate}"></image>
 		</view>
-		<view class="header animated fadeInDown" v-if="rotate" >
-			<input class="inp" type="text" placeholder="请输入要做的事" v-model="tt" @confirm="add()" />
+		<view class="header animated fadeIn" v-if="rotate" >
+			<input class="inp" type="text" placeholder="请输入要做的事" v-model="tt" :focus="rotate" @confirm="add()" />
 			<view class="push" @click="add()">
 				添加
 			</view>
@@ -43,9 +47,12 @@
 
 	export default {
 		name:"todo-list",
+			props:{
+				list:Array,
+				height:Number
+			},
 		data() {
 			return {
-				list:[],
 				tt:'',
 				doing: 0,
 				done: 0,
@@ -62,6 +69,11 @@
 		},
 		methods:{
 			add(){
+				for(var i=0;i<this.list.length;i++){
+					if(this.list[i].finish){
+						this.updateSort(i);
+					}
+				}
 				if(this.tt.trim().length >0){
 					this.list.push(
 						{
@@ -72,7 +84,6 @@
 					this.tt = '';
 					this.doing++;
 					this.updateNum();
-					
 				}else{
 					uni.showToast({
 						title:"不可上传空事件",
@@ -86,16 +97,16 @@
 					this.doing--;
 					this.done++;
 					this.updateNum();
-					setTimeout(() => {
-						this.updateSort(index);
-					}, 50);
+					this.updateSort(index);
 				};
 			},
 			showInput(){
 				this.rotate = !this.rotate; 
 			},
-			updateView(index){
+			hideInput(){
 				this.rotate = false;
+			},
+			updateView(index){
 				this.id = index;
 				this.updateNum();
 				switch(index){
@@ -128,10 +139,20 @@
 					this.num = this.done
 				}
 			},
-			updateSort(index){
-				var ts = this.list[index];
-				this.list.splice(index,1);
-				this.list.push(ts);
+			updateSort(i){
+				// for(var i=0;i<this.list.length;i++){
+				// 	if(this.list[i].finish){
+				// 		var ts = this.list[i];
+				// 		this.list.splice(i,1);
+				// 		this.list.push(ts);
+				// 	}
+				// }
+
+				setTimeout(() => {
+					var ts = this.list[i];
+					this.list.splice(i,1);
+					this.list.push(ts);
+				}, 200);
 			}
 		}
 	}
@@ -140,6 +161,7 @@
 <style>
 	.content{
 		width: 100%;
+		overflow: hidden;
 	}
 	.tips{
 		position: absolute;
@@ -148,7 +170,7 @@
 	}
 	.nav{
 		width: 100%;
-		height: 70rpx;
+		height: 35px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -177,7 +199,7 @@
 		background-color: #FFFFFF;
 		box-shadow: 0px 0px 10px #888888;;
 		border-radius: 50%;
-		position: absolute; left: 50%; bottom: 0;
+		position: absolute; left: 50%; top: 90%;
 		transform: translate(-50%, -50%);
 	}
 	.add image{
@@ -198,7 +220,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		position: absolute; left: 5%; bottom: 15%;
+		position: absolute; left: 5%; top: 78%;
 	}
 	.push{
 		width: 20%;

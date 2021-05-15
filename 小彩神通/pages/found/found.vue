@@ -1,7 +1,7 @@
 <template>
 	<view class="content" :style="{height:height+'px'}">
 		<!-- <navBar :top="statusBar"></navBar> -->
-				<todoList></todoList>
+				<todoList :list='list' :height='height'></todoList>
 		
 	</view>
 </template>
@@ -19,11 +19,7 @@
 				height: 0,
 				width: 0,
 				statusBar: 0,
-				list:[
-					{cont:'Queen',finish:false},
-					{cont:'Queen',finish:true},
-					{cont:'Queen',finish:false},
-				]
+				list:[]
 			}
 		},
 		methods: {  
