@@ -1,8 +1,13 @@
 <template>
 	<view class="content" :style="{height:height+'px'}">
 		<!-- <navBar :top="statusBar"></navBar> -->
-		<!-- <vipCard></vipCard> -->
-		<uploadHead></uploadHead>
+		<view class="top">
+			<uploadHead></uploadHead>
+		</view>
+		<vipCard></vipCard>
+		<view class="main">
+			
+		</view>
 	</view>
 </template>
 
@@ -41,5 +46,22 @@
 </script>
 
 <style>
-
+	.content{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.top{
+		width: 100%;
+		height: 250rpx;
+		background: linear-gradient(to bottom, #83a4d4, #b6fbff);
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.main{
+		width: 100%;
+		height: 999rpx;
+		background-color: #808080;
+	}
 </style>

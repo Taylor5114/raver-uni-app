@@ -71,8 +71,9 @@
 
 <style>
 	.content{
-		width: 200rpx;
-		height: 200rpx;
+		width: 160rpx;
+		height: 160rpx;
+		border-radius: 50%;
 		position: relative;
 	}
 	.tt{
@@ -88,6 +89,6 @@
 		z-index: 1;
 	}
 	.ttbg{
-		background: linear-gradient(to bottom, #8BDEDA, #43ADD0, #998EE0, #E17DC2, #EF9393);
+		background: linear-gradient(to bottom, #4284DB, #29EAC4);
 	}
 </style>

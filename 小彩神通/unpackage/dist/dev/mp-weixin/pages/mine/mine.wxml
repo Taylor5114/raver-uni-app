@@ -1,1 +1,1 @@
-<view class="content" style="{{'height:'+(height+'px')+';'}}"><upload-head vue-id="bae1c640-1" bind:__l="__l"></upload-head></view>
+<view class="content" style="{{'height:'+(height+'px')+';'}}"><view class="top"><upload-head vue-id="bae1c640-1" bind:__l="__l"></upload-head></view><vip-card vue-id="bae1c640-2" bind:__l="__l"></vip-card><view class="main"></view></view>

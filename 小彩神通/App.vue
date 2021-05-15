@@ -17,7 +17,7 @@
 
 <style lang="scss">
     @import "uview-ui/index.scss";
-	
+	@import './common/animate.css';
 	.content{
 		background-color: #F8F8F8;
 	}

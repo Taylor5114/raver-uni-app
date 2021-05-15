@@ -1,24 +1,33 @@
 <template>
 	<view class="content" :style="{height:height+'px'}">
 		<!-- <navBar :top="statusBar"></navBar> -->
+				<todoList></todoList>
+		
 	</view>
 </template>
 
 <script>
+	import todoList from '../../components/todo-list/todolist-plus.vue'
 	import navBar from '../../components/nav-bar/nav-bar.vue'
 	export default {
 		components:{
-			navBar
+			navBar,
+			todoList
 		},
 		data() {
 			return {
 				height: 0,
 				width: 0,
 				statusBar: 0,
+				list:[
+					{cont:'Queen',finish:false},
+					{cont:'Queen',finish:true},
+					{cont:'Queen',finish:false},
+				]
 			}
 		},
-		methods: {
-			
+		methods: {  
+
 		},
 		onLoad() {
 			uni.getSystemInfo({
@@ -33,6 +42,11 @@
 </script>
 
 <style>
+	.content{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 	.box{
 		width: 750rpx;
 		height: 500rpx;
@@ -66,4 +80,10 @@
 		right: 15rpx;
 		z-index: 1;
 	}
+	
+	
+	
+	
+	
+
 </style>
