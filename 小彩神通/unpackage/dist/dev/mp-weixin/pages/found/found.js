@@ -130,7 +130,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var navBar = function navBar() {__webpack_require__.e(/*! require.ensure | components/nav-bar/nav-bar */ "components/nav-bar/nav-bar").then((function () {return resolve(__webpack_require__(/*! ../../components/nav-bar/nav-bar.vue */ 66));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var todoList = function todoList() {__webpack_require__.e(/*! require.ensure | components/todo-list/todolist-plus */ "components/todo-list/todolist-plus").then((function () {return resolve(__webpack_require__(/*! ../../components/todo-list/todolist-plus.vue */ 89));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var navBar = function navBar() {__webpack_require__.e(/*! require.ensure | components/nav-bar/nav-bar */ "components/nav-bar/nav-bar").then((function () {return resolve(__webpack_require__(/*! ../../components/nav-bar/nav-bar.vue */ 68));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
 
 
 
@@ -140,13 +142,15 @@ __webpack_require__.r(__webpack_exports__);
 
 {
   components: {
-    navBar: navBar },
+    navBar: navBar,
+    todoList: todoList },
 
   data: function data() {
     return {
       height: 0,
       width: 0,
-      statusBar: 0 };
+      statusBar: 0,
+      list: [] };
 
   },
   methods: {},

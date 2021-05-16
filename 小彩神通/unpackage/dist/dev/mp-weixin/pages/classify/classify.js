@@ -128,7 +128,8 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var navBar = function navBar() {__webpack_require__.e(/*! require.ensure | components/nav-bar/nav-bar */ "components/nav-bar/nav-bar").then((function () {return resolve(__webpack_require__(/*! ../../components/nav-bar/nav-bar.vue */ 66));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var uploadImg = function uploadImg() {__webpack_require__.e(/*! require.ensure | components/upload-image/upload-image */ "components/upload-image/upload-image").then((function () {return resolve(__webpack_require__(/*! ../../components/upload-image/upload-image.vue */ 80));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var navBar = function navBar() {__webpack_require__.e(/*! require.ensure | components/nav-bar/nav-bar */ "components/nav-bar/nav-bar").then((function () {return resolve(__webpack_require__(/*! ../../components/nav-bar/nav-bar.vue */ 68));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var uploadImg = function uploadImg() {__webpack_require__.e(/*! require.ensure | components/upload-image/upload-image */ "components/upload-image/upload-image").then((function () {return resolve(__webpack_require__(/*! ../../components/upload-image/upload-image.vue */ 82));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
 
 
 
@@ -149,16 +150,52 @@ __webpack_require__.r(__webpack_exports__);
       statusBar: Number };
 
   },
-  methods: {},
+  methods: {
+    getInfo: function getInfo() {var _this = this;
+      uni.getSystemInfo({
+        success: function success(res) {
+          _this.height = res.windowHeight;
+          _this.width = res.windowWidth;
+          _this.statusBar = res.statusBarHeight;
+        } });
+
+    },
+    getData: function getData() {
+      uni.request({
+        url: '/6093ccdb1d10f86a7bd6b305/lottery/person',
+        success: function success(res) {
+          // console.log(res.data)
+        } });
+
+    },
+    getIntercept: function getIntercept() {
+      uni.addInterceptor('request', {
+        invoke: function invoke(args) {
+          // request 触发前拼接 url 
+          args.url = 'https://mock.mengxuegu.com/mock' + args.url;
+
+        },
+        success: function success(args) {
+          // 请求成功后，修改code值为1
+          args.data.code = 1;
+          console.log(args.data);
+        },
+        fail: function fail(err) {
+          // console.log('interceptor-fail',err)
+        },
+        complete: function complete(res) {
+          // console.log('interceptor-complete',res)
+        } });
+
+    } },
 
 
-  onLoad: function onLoad() {var _this = this;
-    uni.getSystemInfo({
-      success: function success(res) {
-        _this.height = res.windowHeight;
-        _this.width = res.windowWidth;
-        _this.statusBar = res.statusBarHeight;
-      } });
+  onLoad: function onLoad() {
+    this.getInfo();
+    this.getIntercept();
+    this.getData();
+
+
 
   } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))

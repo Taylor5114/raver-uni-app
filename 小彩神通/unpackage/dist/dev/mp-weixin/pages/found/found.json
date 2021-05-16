@@ -2,6 +2,7 @@
   "navigationBarTitleText": "发现",
   "enablePullDownRefresh": false,
   "usingComponents": {
-    "nav-bar": "/components/nav-bar/nav-bar"
+    "nav-bar": "/components/nav-bar/nav-bar",
+    "todo-list": "/components/todo-list/todolist-plus"
   }
 }

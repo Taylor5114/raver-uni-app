@@ -67,5 +67,12 @@
     },
     "uniStatistics" : {
         "enable" : false
+    },
+    "h5" : {
+        "title" : "小彩神通",
+        "domain" : "www.taylor5114.top",
+        "router" : {
+            "base" : "/test01/"
+        }
     }
 }

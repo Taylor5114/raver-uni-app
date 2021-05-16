@@ -11,18 +11,19 @@
 				</view>
 			</view>
 			<scroll-view scroll-y="true" :style="{height:height-35+'px'}" @click="hideInput()">
-				<view>
-					<view class="item animated fadeInLeft" v-for="(item,index) in list" v-if='true && A'>
+				<view :style="{height:height-30+'px'}">
+					<view class="item " v-for="(item,index) in list" v-if='true && A'>
+						<checkbox value="" :checked="item.finish" @click="finish(index)" :disabled="item.finish" />
+						<text v-if="!item.finish">{{item.cont}}</text>
+						<del v-if="item.finish">{{item.cont}}</del>
+						<view class="del"><view></view></view>
+					</view>
+					<view class="item" v-for="(item,index) in list" v-if='!item.finish && B'>
 						<checkbox value="" :checked="item.finish" @click="finish(index)" :disabled="item.finish" />
 						<text v-if="!item.finish">{{item.cont}}</text>
 						<del v-if="item.finish">{{item.cont}}</del>
 					</view>
-					<view class="item animated fadeInLeft" v-for="(item,index) in list" v-if='!item.finish && B'>
-						<checkbox value="" :checked="item.finish" @click="finish(index)" :disabled="item.finish" />
-						<text v-if="!item.finish">{{item.cont}}</text>
-						<del v-if="item.finish">{{item.cont}}</del>
-					</view>
-					<view class="item animated fadeInLeft" v-for="(item,index) in list" v-if='item.finish && C'>
+					<view class="item" v-for="(item,index) in list" v-if='item.finish && C'>
 						<checkbox value="" :checked="item.finish" @click="finish(index)" :disabled="item.finish" />
 						<text v-if="!item.finish">{{item.cont}}</text>
 						<del v-if="item.finish">{{item.cont}}</del>
@@ -64,33 +65,31 @@
 				navs:[
 					'全部','进行中','已完成'
 				],
-				id: 0,
+				id: 0
 			};
 		},
 		methods:{
+			// 添加事件
 			add(){
-				for(var i=0;i<this.list.length;i++){
-					if(this.list[i].finish){
-						this.updateSort(i);
-					}
-				}
 				if(this.tt.trim().length >0){
 					this.list.push(
 						{
 							cont:this.tt,
 							finish:false
 						}
-					);	
+					);
 					this.tt = '';
 					this.doing++;
 					this.updateNum();
+					this.upSort();
 				}else{
 					uni.showToast({
 						title:"不可上传空事件",
 						icon: 'none'
 					})
-				}
+				};
 			},
+			//完成事件
 			finish(index){
 				if(!this.list[index].finish){
 					this.list[index].finish = true;
@@ -100,12 +99,15 @@
 					this.updateSort(index);
 				};
 			},
+			// 显示输入框
 			showInput(){
 				this.rotate = !this.rotate; 
 			},
+			// 隐藏输入框
 			hideInput(){
 				this.rotate = false;
 			},
+			// 点击导航栏更新数量以及列表显示
 			updateView(index){
 				this.id = index;
 				this.updateNum();
@@ -127,6 +129,7 @@
 					break;
 				}
 			},
+			// 更新左上角数量
 			updateNum(){
 				switch(this.id){
 					case 0:
@@ -139,20 +142,32 @@
 					this.num = this.done
 				}
 			},
+			// 更新列表排序
 			updateSort(i){
+				setTimeout(() => {
+					var ts = this.list[i];
+					this.list.splice(i,1);
+					this.list.push(ts);
+				}, 200);
+			},
+			// 更新全部列表
+			upSort(){
 				// for(var i=0;i<this.list.length;i++){
 				// 	if(this.list[i].finish){
 				// 		var ts = this.list[i];
 				// 		this.list.splice(i,1);
 				// 		this.list.push(ts);
 				// 	}
-				// }
-
-				setTimeout(() => {
-					var ts = this.list[i];
-					this.list.splice(i,1);
-					this.list.push(ts);
-				}, 200);
+				// };
+				for(var x=0;x<this.list.length;x++){
+					for(var i=0;i<this.list.length;i++){
+						if(this.list[i].finish){
+							var ts = this.list[i];
+							this.list.splice(i,1);
+							this.list.push(ts);
+						}
+					};
+				};
 			}
 		}
 	}
@@ -160,7 +175,7 @@
 
 <style>
 	.content{
-		width: 100%;
+		width: 750rpx;
 		overflow: hidden;
 	}
 	.tips{
@@ -275,8 +290,27 @@
 		display: flex;
 		align-items: center;
 		border-bottom: 1rpx solid #808080;
+		position: relative;
 	}
 	checkbox{
 		margin-right:20rpx;
+	}
+	.del{
+		width: 40rpx;
+		height: 40rpx;
+		background-color: #EE6666;
+		border-radius: 50%;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		right: 0;
+	}
+	.del view{
+		width: 30rpx;
+		height: 8rpx;
+		border-radius: 4rpx;
+		background-color: #FFFFFF;
 	}
 </style>

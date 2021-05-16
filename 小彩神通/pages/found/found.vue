@@ -1,8 +1,7 @@
 <template>
 	<view class="content" :style="{height:height+'px'}">
 		<!-- <navBar :top="statusBar"></navBar> -->
-				<todoList :list='list' :height='height'></todoList>
-		
+		<todoList :list='list' :height='height'></todoList>
 	</view>
 </template>
 
@@ -75,11 +74,5 @@
 		top: 15rpx;
 		right: 15rpx;
 		z-index: 1;
-	}
-	
-	
-	
-	
-	
-
+	}	
 </style>

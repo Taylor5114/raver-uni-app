@@ -1,1 +1,1 @@
-<view class="content" style="{{'height:'+(height+'px')+';'}}"><upload-img vue-id="91ba9280-1" bind:__l="__l"></upload-img></view>
+<view class="content" style="{{'height:'+(height+'px')+';'}}"></view>
