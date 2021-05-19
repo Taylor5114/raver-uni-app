@@ -1997,44 +1997,92 @@ var render = function() {
                                 attrs: { _i: "10-" + $31 }
                               },
                               [
-                                _c("v-uni-checkbox", {
-                                  attrs: {
-                                    value: "",
-                                    checked: _vm._$g("11-" + $31, "a-checked"),
-                                    disabled: _vm._$g(
-                                      "11-" + $31,
-                                      "a-disabled"
-                                    ),
-                                    _i: "11-" + $31
-                                  },
-                                  on: {
-                                    click: function($event) {
-                                      return _vm.$handleViewEvent($event)
-                                    }
-                                  }
-                                }),
-                                _vm._$g("12-" + $31, "i")
-                                  ? _c(
-                                      "v-uni-text",
-                                      { attrs: { _i: "12-" + $31 } },
-                                      [_vm._v(_vm._$g("12-" + $31, "t0-0"))]
-                                    )
-                                  : _vm._e(),
-                                _vm._$g("13-" + $31, "i")
-                                  ? _c("del", { attrs: { _i: "13-" + $31 } }, [
-                                      _vm._v(_vm._$g("13-" + $31, "t0-0"))
-                                    ])
-                                  : _vm._e(),
                                 _c(
-                                  "v-uni-view",
+                                  "v-uni-scroll-view",
                                   {
-                                    staticClass: _vm._$g("14-" + $31, "sc"),
-                                    attrs: { _i: "14-" + $31 }
+                                    staticClass: _vm._$g("11-" + $31, "sc"),
+                                    attrs: {
+                                      "scroll-x": "true",
+                                      _i: "11-" + $31
+                                    }
                                   },
                                   [
-                                    _c("v-uni-view", {
-                                      attrs: { _i: "15-" + $31 }
-                                    })
+                                    _c(
+                                      "v-uni-view",
+                                      {
+                                        staticClass: _vm._$g("12-" + $31, "sc"),
+                                        attrs: { _i: "12-" + $31 }
+                                      },
+                                      [
+                                        _c("v-uni-checkbox", {
+                                          attrs: {
+                                            value: "",
+                                            checked: _vm._$g(
+                                              "13-" + $31,
+                                              "a-checked"
+                                            ),
+                                            disabled: _vm._$g(
+                                              "13-" + $31,
+                                              "a-disabled"
+                                            ),
+                                            _i: "13-" + $31
+                                          },
+                                          on: {
+                                            click: function($event) {
+                                              return _vm.$handleViewEvent(
+                                                $event
+                                              )
+                                            }
+                                          }
+                                        }),
+                                        _vm._$g("14-" + $31, "i")
+                                          ? _c(
+                                              "v-uni-text",
+                                              { attrs: { _i: "14-" + $31 } },
+                                              [
+                                                _vm._v(
+                                                  _vm._$g("14-" + $31, "t0-0")
+                                                )
+                                              ]
+                                            )
+                                          : _vm._e(),
+                                        _vm._$g("15-" + $31, "i")
+                                          ? _c(
+                                              "del",
+                                              { attrs: { _i: "15-" + $31 } },
+                                              [
+                                                _vm._v(
+                                                  _vm._$g("15-" + $31, "t0-0")
+                                                )
+                                              ]
+                                            )
+                                          : _vm._e(),
+                                        _c(
+                                          "v-uni-view",
+                                          {
+                                            staticClass: _vm._$g(
+                                              "16-" + $31,
+                                              "sc"
+                                            ),
+                                            attrs: { _i: "16-" + $31 },
+                                            on: {
+                                              click: function($event) {
+                                                return _vm.$handleViewEvent(
+                                                  $event
+                                                )
+                                              }
+                                            }
+                                          },
+                                          [
+                                            _c("v-uni-view", {
+                                              attrs: { _i: "17-" + $31 }
+                                            })
+                                          ],
+                                          1
+                                        )
+                                      ],
+                                      1
+                                    )
                                   ],
                                   1
                                 )
@@ -2043,25 +2091,25 @@ var render = function() {
                             )
                           : _vm._e()
                       }),
-                      _vm._l(_vm._$g(16, "f"), function(item, index, $22, $32) {
-                        return _vm._$g("16-" + $32, "i")
+                      _vm._l(_vm._$g(18, "f"), function(item, index, $22, $32) {
+                        return _vm._$g("18-" + $32, "i")
                           ? _c(
                               "v-uni-view",
                               {
                                 key: item,
-                                staticClass: _vm._$g("16-" + $32, "sc"),
-                                attrs: { _i: "16-" + $32 }
+                                staticClass: _vm._$g("18-" + $32, "sc"),
+                                attrs: { _i: "18-" + $32 }
                               },
                               [
                                 _c("v-uni-checkbox", {
                                   attrs: {
                                     value: "",
-                                    checked: _vm._$g("17-" + $32, "a-checked"),
+                                    checked: _vm._$g("19-" + $32, "a-checked"),
                                     disabled: _vm._$g(
-                                      "17-" + $32,
+                                      "19-" + $32,
                                       "a-disabled"
                                     ),
-                                    _i: "17-" + $32
+                                    _i: "19-" + $32
                                   },
                                   on: {
                                     click: function($event) {
@@ -2069,16 +2117,16 @@ var render = function() {
                                     }
                                   }
                                 }),
-                                _vm._$g("18-" + $32, "i")
+                                _vm._$g("20-" + $32, "i")
                                   ? _c(
                                       "v-uni-text",
-                                      { attrs: { _i: "18-" + $32 } },
-                                      [_vm._v(_vm._$g("18-" + $32, "t0-0"))]
+                                      { attrs: { _i: "20-" + $32 } },
+                                      [_vm._v(_vm._$g("20-" + $32, "t0-0"))]
                                     )
                                   : _vm._e(),
-                                _vm._$g("19-" + $32, "i")
-                                  ? _c("del", { attrs: { _i: "19-" + $32 } }, [
-                                      _vm._v(_vm._$g("19-" + $32, "t0-0"))
+                                _vm._$g("21-" + $32, "i")
+                                  ? _c("del", { attrs: { _i: "21-" + $32 } }, [
+                                      _vm._v(_vm._$g("21-" + $32, "t0-0"))
                                     ])
                                   : _vm._e()
                               ],
@@ -2086,25 +2134,25 @@ var render = function() {
                             )
                           : _vm._e()
                       }),
-                      _vm._l(_vm._$g(20, "f"), function(item, index, $23, $33) {
-                        return _vm._$g("20-" + $33, "i")
+                      _vm._l(_vm._$g(22, "f"), function(item, index, $23, $33) {
+                        return _vm._$g("22-" + $33, "i")
                           ? _c(
                               "v-uni-view",
                               {
                                 key: item,
-                                staticClass: _vm._$g("20-" + $33, "sc"),
-                                attrs: { _i: "20-" + $33 }
+                                staticClass: _vm._$g("22-" + $33, "sc"),
+                                attrs: { _i: "22-" + $33 }
                               },
                               [
                                 _c("v-uni-checkbox", {
                                   attrs: {
                                     value: "",
-                                    checked: _vm._$g("21-" + $33, "a-checked"),
+                                    checked: _vm._$g("23-" + $33, "a-checked"),
                                     disabled: _vm._$g(
-                                      "21-" + $33,
+                                      "23-" + $33,
                                       "a-disabled"
                                     ),
-                                    _i: "21-" + $33
+                                    _i: "23-" + $33
                                   },
                                   on: {
                                     click: function($event) {
@@ -2112,16 +2160,16 @@ var render = function() {
                                     }
                                   }
                                 }),
-                                _vm._$g("22-" + $33, "i")
+                                _vm._$g("24-" + $33, "i")
                                   ? _c(
                                       "v-uni-text",
-                                      { attrs: { _i: "22-" + $33 } },
-                                      [_vm._v(_vm._$g("22-" + $33, "t0-0"))]
+                                      { attrs: { _i: "24-" + $33 } },
+                                      [_vm._v(_vm._$g("24-" + $33, "t0-0"))]
                                     )
                                   : _vm._e(),
-                                _vm._$g("23-" + $33, "i")
-                                  ? _c("del", { attrs: { _i: "23-" + $33 } }, [
-                                      _vm._v(_vm._$g("23-" + $33, "t0-0"))
+                                _vm._$g("25-" + $33, "i")
+                                  ? _c("del", { attrs: { _i: "25-" + $33 } }, [
+                                      _vm._v(_vm._$g("25-" + $33, "t0-0"))
                                     ])
                                   : _vm._e()
                               ],
@@ -2142,8 +2190,8 @@ var render = function() {
       _c(
         "v-uni-view",
         {
-          staticClass: _vm._$g(24, "sc"),
-          attrs: { _i: 24 },
+          staticClass: _vm._$g(26, "sc"),
+          attrs: { _i: 26 },
           on: {
             click: function($event) {
               return _vm.$handleViewEvent($event)
@@ -2152,24 +2200,24 @@ var render = function() {
         },
         [
           _c("v-uni-image", {
-            class: _vm._$g(25, "c"),
-            attrs: { src: _vm._$g(25, "a-src"), mode: "", _i: 25 }
+            class: _vm._$g(27, "c"),
+            attrs: { src: _vm._$g(27, "a-src"), mode: "", _i: 27 }
           })
         ],
         1
       ),
-      _vm._$g(26, "i")
+      _vm._$g(28, "i")
         ? _c(
             "v-uni-view",
-            { staticClass: _vm._$g(26, "sc"), attrs: { _i: 26 } },
+            { staticClass: _vm._$g(28, "sc"), attrs: { _i: 28 } },
             [
               _c("v-uni-input", {
-                staticClass: _vm._$g(27, "sc"),
+                staticClass: _vm._$g(29, "sc"),
                 attrs: {
                   type: "text",
                   placeholder: "请输入要做的事",
-                  focus: _vm._$g(27, "a-focus"),
-                  _i: 27
+                  focus: _vm._$g(29, "a-focus"),
+                  _i: 29
                 },
                 on: {
                   confirm: function($event) {
@@ -2177,9 +2225,9 @@ var render = function() {
                   }
                 },
                 model: {
-                  value: _vm._$g(27, "v-model"),
+                  value: _vm._$g(29, "v-model"),
                   callback: function($$v) {
-                    _vm.$handleVModelEvent(27, $$v)
+                    _vm.$handleVModelEvent(29, $$v)
                   },
                   expression: "tt"
                 }
@@ -2187,8 +2235,8 @@ var render = function() {
               _c(
                 "v-uni-view",
                 {
-                  staticClass: _vm._$g(28, "sc"),
-                  attrs: { _i: 28 },
+                  staticClass: _vm._$g(30, "sc"),
+                  attrs: { _i: 30 },
                   on: {
                     click: function($event) {
                       return _vm.$handleViewEvent($event)
@@ -2293,7 +2341,7 @@ if(false) {}
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../../../Applications/HBuilderX-3.1.9.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/css-loader/dist/runtime/api.js */ 15);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "\n.content[data-v-4a3b71a4]{\n\twidth: 750rpx;\n\toverflow: hidden;\n}\n.tips[data-v-4a3b71a4]{\n\tposition: absolute;\n\ttop: 20%;\n\tcolor: #888888;\n}\n.nav[data-v-4a3b71a4]{\n\twidth: 100%;\n\theight: 35px;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-pack: justify;\n\t-webkit-justify-content: space-between;\n\t        justify-content: space-between;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n}\n.left[data-v-4a3b71a4]{\n\twidth: 40rpx;\n\theight: 40rpx;\n\t-webkit-border-radius: 50%;\n\t        border-radius: 50%;\n\tbackground-color: #007AFF;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-pack: center;\n\t-webkit-justify-content: center;\n\t        justify-content: center;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n}\n.left uni-text[data-v-4a3b71a4]{\n\tcolor: #FFFFFF;\n}\n._nav[data-v-4a3b71a4]{\n\tcolor: #007AFF;\n}\n.right uni-text[data-v-4a3b71a4]{\n\tmargin-left: 30rpx;\n}\n.add[data-v-4a3b71a4]{\n\twidth: 100rpx;\n\theight: 100rpx;\n\tbackground-color: #FFFFFF;\n\t-webkit-box-shadow: 0px 0px 10px #888888;\n\t        box-shadow: 0px 0px 10px #888888;;\n\t-webkit-border-radius: 50%;;\n\t        border-radius: 50%;\n\tposition: absolute; left: 50%; top: 90%;\n\t-webkit-transform: translate(-50%, -50%);\n\t        transform: translate(-50%, -50%);\n}\n.add uni-image[data-v-4a3b71a4]{\n\twidth: 100%;\n\theight: 100%;\n\t-webkit-transition: 0.2s;\n\ttransition: 0.2s;\n}\n.rotate[data-v-4a3b71a4]{\n\t-webkit-transform:rotate(45deg);\n\t        transform:rotate(45deg);\n\t-webkit-transition: 0.2s;\n\ttransition: 0.2s;\n}\n.header[data-v-4a3b71a4]{\n\twidth: 90%;\n\theight: 80rpx;\n\tbackground-color: #FFFFFF;\n\t-webkit-border-radius: 20rpx;\n\t        border-radius: 20rpx;\n\t-webkit-box-shadow: 5px 5px 10px #888888;\n\t        box-shadow: 5px 5px 10px #888888;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-pack: center;\n\t-webkit-justify-content: center;\n\t        justify-content: center;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n\tposition: absolute; left: 5%; top: 78%;\n}\n.push[data-v-4a3b71a4]{\n\twidth: 20%;\n\theight: 70rpx;\n\t-webkit-border-radius: 20rpx;\n\t        border-radius: 20rpx;\n\t-webkit-box-shadow: 0px 0px 10px #888888;\n\t        box-shadow: 0px 0px 10px #888888;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-pack: center;\n\t-webkit-justify-content: center;\n\t        justify-content: center;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n\tfont-size: 35rpx;\n\tcolor: #888888;\n}\n.inp[data-v-4a3b71a4]{\n\twidth: 80%;\n\theight: 80rpx;\n\ttext-align: center;\n\tcolor: #888888;\n}\n.tt_0[data-v-4a3b71a4]{\n\twidth: 90%;\n\theight: 70rpx;\n\tborder-bottom: 1rpx solid #888888;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n\t-webkit-box-pack: justify;\n\t-webkit-justify-content: space-between;\n\t        justify-content: space-between;\n}\n.tt_0 uni-text[data-v-4a3b71a4]{\n\tfont-size: 40rpx;\n\tcolor: #909090;\n}\n.count[data-v-4a3b71a4]{\n\twidth: 40rpx;\n\theight: 40rpx;\n\t-webkit-box-shadow: 0px 0px 10px #888888;\n\t        box-shadow: 0px 0px 10px #888888;\n\tfont-size: 30rpx;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-pack: center;\n\t-webkit-justify-content: center;\n\t        justify-content: center;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n\t-webkit-border-radius: 50%;\n\t        border-radius: 50%;\n}\n.list[data-v-4a3b71a4]{\n\twidth: 90%;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-orient: vertical;\n\t-webkit-box-direction: normal;\n\t-webkit-flex-direction: column;\n\t        flex-direction: column;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n\t-webkit-justify-content: space-around;\n\t        justify-content: space-around\n}\n.item[data-v-4a3b71a4]{\n\twidth: 100%;\n\theight: 70rpx;\n\tmargin: 10rpx auto;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n\tborder-bottom: 1rpx solid #808080;\n\tposition: relative;\n}\nuni-checkbox[data-v-4a3b71a4]{\n\tmargin-right:20rpx;\n}\n.del[data-v-4a3b71a4]{\n\twidth: 40rpx;\n\theight: 40rpx;\n\tbackground-color: #EE6666;\n\t-webkit-border-radius: 50%;\n\t        border-radius: 50%;\n\toverflow: hidden;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-pack: center;\n\t-webkit-justify-content: center;\n\t        justify-content: center;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n\tposition: absolute;\n\tright: 0;\n}\n.del uni-view[data-v-4a3b71a4]{\n\twidth: 30rpx;\n\theight: 8rpx;\n\t-webkit-border-radius: 4rpx;\n\t        border-radius: 4rpx;\n\tbackground-color: #FFFFFF;\n}\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* 解决小程序和app滚动条的问题 */\n[data-v-4a3b71a4]::-webkit-scrollbar {\ndisplay: none;\nwidth: 0 !important;\nheight: 0 !important;\n-webkit-appearance: none;\nbackground: transparent;\ncolor: transparent;\n}\n\n/* 解决H5 的问题 */\n.content[data-v-4a3b71a4]{\n\twidth: 750rpx;\n\toverflow: hidden;\n}\n.tips[data-v-4a3b71a4]{\n\tposition: absolute;\n\ttop: 20%;\n\tcolor: #888888;\n}\n.nav[data-v-4a3b71a4]{\n\twidth: 100%;\n\theight: 35px;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-pack: justify;\n\t-webkit-justify-content: space-between;\n\t        justify-content: space-between;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n}\n.left[data-v-4a3b71a4]{\n\twidth: 40rpx;\n\theight: 40rpx;\n\t-webkit-border-radius: 50%;\n\t        border-radius: 50%;\n\tbackground-color: #007AFF;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-pack: center;\n\t-webkit-justify-content: center;\n\t        justify-content: center;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n}\n.left uni-text[data-v-4a3b71a4]{\n\tcolor: #FFFFFF;\n}\n._nav[data-v-4a3b71a4]{\n\tcolor: #007AFF;\n}\n.right uni-text[data-v-4a3b71a4]{\n\tmargin-left: 30rpx;\n}\n.add[data-v-4a3b71a4]{\n\twidth: 100rpx;\n\theight: 100rpx;\n\tbackground-color: #FFFFFF;\n\t-webkit-box-shadow: 0px 0px 10px #888888;\n\t        box-shadow: 0px 0px 10px #888888;;\n\t-webkit-border-radius: 50%;;\n\t        border-radius: 50%;\n\tposition: absolute; left: 50%; top: 90%;\n\t-webkit-transform: translate(-50%, -50%);\n\t        transform: translate(-50%, -50%);\n}\n.add uni-image[data-v-4a3b71a4]{\n\twidth: 100%;\n\theight: 100%;\n\t-webkit-transition: 0.2s;\n\ttransition: 0.2s;\n}\n.rotate[data-v-4a3b71a4]{\n\t-webkit-transform:rotate(45deg);\n\t        transform:rotate(45deg);\n\t-webkit-transition: 0.2s;\n\ttransition: 0.2s;\n}\n.header[data-v-4a3b71a4]{\n\twidth: 90%;\n\theight: 80rpx;\n\tbackground-color: #FFFFFF;\n\t-webkit-border-radius: 20rpx;\n\t        border-radius: 20rpx;\n\t-webkit-box-shadow: 5px 5px 10px #888888;\n\t        box-shadow: 5px 5px 10px #888888;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-pack: center;\n\t-webkit-justify-content: center;\n\t        justify-content: center;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n\tposition: absolute; left: 5%; top: 78%;\n}\n.push[data-v-4a3b71a4]{\n\twidth: 20%;\n\theight: 70rpx;\n\t-webkit-border-radius: 20rpx;\n\t        border-radius: 20rpx;\n\t-webkit-box-shadow: 0px 0px 10px #888888;\n\t        box-shadow: 0px 0px 10px #888888;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-pack: center;\n\t-webkit-justify-content: center;\n\t        justify-content: center;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n\tfont-size: 35rpx;\n\tcolor: #888888;\n}\n.inp[data-v-4a3b71a4]{\n\twidth: 80%;\n\theight: 80rpx;\n\ttext-align: center;\n\tcolor: #888888;\n}\n.tt_0[data-v-4a3b71a4]{\n\twidth: 90%;\n\theight: 70rpx;\n\tborder-bottom: 1rpx solid #888888;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n\t-webkit-box-pack: justify;\n\t-webkit-justify-content: space-between;\n\t        justify-content: space-between;\n}\n.tt_0 uni-text[data-v-4a3b71a4]{\n\tfont-size: 40rpx;\n\tcolor: #909090;\n}\n.count[data-v-4a3b71a4]{\n\twidth: 40rpx;\n\theight: 40rpx;\n\t-webkit-box-shadow: 0px 0px 10px #888888;\n\t        box-shadow: 0px 0px 10px #888888;\n\tfont-size: 30rpx;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-pack: center;\n\t-webkit-justify-content: center;\n\t        justify-content: center;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n\t-webkit-border-radius: 50%;\n\t        border-radius: 50%;\n}\n.list[data-v-4a3b71a4]{\n\twidth: 90%;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-orient: vertical;\n\t-webkit-box-direction: normal;\n\t-webkit-flex-direction: column;\n\t        flex-direction: column;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n\t-webkit-justify-content: space-around;\n\t        justify-content: space-around\n}\n.item[data-v-4a3b71a4]{\n\twidth: 675rpx;\n\theight: 70rpx;\n\tmargin: 10rpx auto;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n\tborder-bottom: 1rpx solid #808080;\n}\n._item[data-v-4a3b71a4]{\n\twidth: 755rpx;\n\t/* height: 70rpx; */\n\t/* background-color: #007AFF; */\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n\t/* justify-content: space-between; */\n\tposition: relative;\n}\nuni-checkbox[data-v-4a3b71a4]{\n\tmargin-right:20rpx;\n}\n.del[data-v-4a3b71a4]{\n\twidth: 40rpx;\n\theight: 40rpx;\n\tbackground-color: #EE6666;\n\t-webkit-border-radius: 50%;\n\t        border-radius: 50%;\n\toverflow: hidden;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-pack: center;\n\t-webkit-justify-content: center;\n\t        justify-content: center;\n\t-webkit-box-align: center;\n\t-webkit-align-items: center;\n\t        align-items: center;\n\tposition: absolute;\n\tright: 0;\n}\n.del uni-view[data-v-4a3b71a4]{\n\twidth: 30rpx;\n\theight: 8rpx;\n\t-webkit-border-radius: 4rpx;\n\t        border-radius: 4rpx;\n\tbackground-color: #FFFFFF;\n}\n", ""]);
 // Exports
 module.exports = exports;
 

@@ -18,7 +18,10 @@
 				height: 0,
 				width: 0,
 				statusBar: 0,
-				list:[]
+				list:[
+					{cont:'queen',
+					finish: false}
+				]
 			}
 		},
 		methods: {  

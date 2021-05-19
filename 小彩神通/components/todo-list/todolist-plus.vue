@@ -12,12 +12,26 @@
 			</view>
 			<scroll-view scroll-y="true" :style="{height:height-35+'px'}" @click="hideInput()">
 				<view :style="{height:height-30+'px'}">
-					<view class="item " v-for="(item,index) in list" v-if='true && A'>
+					<!-- <view class="item " v-for="(item,index) in list" v-if='true && A'>
 						<checkbox value="" :checked="item.finish" @click="finish(index)" :disabled="item.finish" />
 						<text v-if="!item.finish">{{item.cont}}</text>
 						<del v-if="item.finish">{{item.cont}}</del>
 						<view class="del"><view></view></view>
+					</view> -->
+					
+					
+					<view class="item " v-for="(item,index) in list" v-if='true && A'>
+						<scroll-view scroll-x="true" class="item">
+							<view class="_item">
+								<checkbox value="" :checked="item.finish" @click="finish(index)" :disabled="item.finish" />
+								<text v-if="!item.finish">{{item.cont}}</text>
+								<del v-if="item.finish">{{item.cont}}</del>
+								<view class="del" @click="remove(index)"><view></view></view>
+							</view>
+						</scroll-view>
 					</view>
+					
+					
 					<view class="item" v-for="(item,index) in list" v-if='!item.finish && B'>
 						<checkbox value="" :checked="item.finish" @click="finish(index)" :disabled="item.finish" />
 						<text v-if="!item.finish">{{item.cont}}</text>
@@ -55,9 +69,9 @@
 		data() {
 			return {
 				tt:'',
-				doing: 0,
+				doing: 1,
 				done: 0,
-				num: 0,
+				num: 1,
 				A: true,
 				B: false,
 				C: false,
@@ -168,12 +182,56 @@
 						}
 					};
 				};
+			},
+			// 滚动
+			scroll(){
+				uni.createSelectorQuery().select(".app").boundingClientRect(data=>{//目标节点
+				　　uni.createSelectorQuery().select(".al").boundingClientRect((res)=>{//最外层盒子节点
+				　　　　uni.pageScrollTo({
+				　　　　　　duration:0,//过渡时间必须为0，uniapp bug，否则运行到手机会报错
+				　　　　　　scrollTop:res.top - data.top,//滚动到实际距离是元素距离顶部的距离减去最外层盒子的滚动距离
+				　　　　})
+				　　}).exec()
+				}).exec();
+			},
+			// 删除
+			remove(i){
+				this.list.splice(i,1);
+				this.num = this.doing+this.done;
 			}
 		}
 	}
 </script>
 
 <style>
+	
+	/* 解决小程序和app滚动条的问题 */
+	/* #ifdef MP-WEIXIN || APP-PLUS */
+	::-webkit-scrollbar {
+	display: none;
+	width: 0 !important;
+	height: 0 !important;
+	-webkit-appearance: none;
+	background: transparent;
+	color: transparent;
+	}
+	/* #endif */
+	
+	/* 解决H5 的问题 */
+	/* #ifdef H5 */
+	uni-scroll-view .uni-scroll-view::-webkit-scrollbar {
+	/* 隐藏滚动条，但依旧具备可以滚动的功能 */
+	display: none;
+	width: 0 !important;
+	height: 0 !important;
+	-webkit-appearance: none;
+	background: transparent;
+	color: transparent;
+	}
+	/* #endif */
+	
+	
+	
 	.content{
 		width: 750rpx;
 		overflow: hidden;
@@ -284,12 +342,20 @@
 		justify-content: space-around
 	}
 	.item{
-		width: 100%;
+		width: 675rpx;
 		height: 70rpx;
 		margin: 10rpx auto;
 		display: flex;
 		align-items: center;
 		border-bottom: 1rpx solid #808080;
+	}
+	._item{
+		width: 755rpx;
+		/* height: 70rpx; */
+		/* background-color: #007AFF; */
+		display: flex;
+		align-items: center;
+		/* justify-content: space-between; */
 		position: relative;
 	}
 	checkbox{
